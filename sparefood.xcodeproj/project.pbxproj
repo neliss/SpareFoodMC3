@@ -21,6 +21,7 @@
 		9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4F212AC53C0018F8AA /* LoginDonatur.swift */; };
 		9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB53212AC5BE0018F8AA /* RegisKomunitas.swift */; };
 		9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB55212AC5D70018F8AA /* LoginKomunitas.swift */; };
+		9146BB59212AC86A0018F8AA /* ChooseUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB58212AC86A0018F8AA /* ChooseUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		9146BB4F212AC53C0018F8AA /* LoginDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDonatur.swift; sourceTree = "<group>"; };
 		9146BB53212AC5BE0018F8AA /* RegisKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisKomunitas.swift; sourceTree = "<group>"; };
 		9146BB55212AC5D70018F8AA /* LoginKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKomunitas.swift; sourceTree = "<group>"; };
+		9146BB58212AC86A0018F8AA /* ChooseUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseUser.swift; sourceTree = "<group>"; };
 		D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,6 +110,7 @@
 		9146BB23212AB9820018F8AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9146BB57212AC8530018F8AA /* Choose */,
 				9146BB27212ABE2D0018F8AA /* User */,
 				11B1FF812122A3B600C739A5 /* ViewController.swift */,
 				11B1FF7F2122A3B600C739A5 /* AppDelegate.swift */,
@@ -424,6 +427,14 @@
 			path = LoginK;
 			sourceTree = "<group>";
 		};
+		9146BB57212AC8530018F8AA /* Choose */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB58212AC86A0018F8AA /* ChooseUser.swift */,
+			);
+			path = Choose;
+			sourceTree = "<group>";
+		};
 		F323F8DF11D49687F3997F87 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -556,6 +567,7 @@
 				9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */,
 				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
 				9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */,
+				9146BB59212AC86A0018F8AA /* ChooseUser.swift in Sources */,
 				9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */,
 				11B1FF882122A3B600C739A5 /* sparefood.xcdatamodeld in Sources */,
 			);

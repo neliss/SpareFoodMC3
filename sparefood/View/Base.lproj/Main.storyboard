@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -74,10 +74,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="-1574.5" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Choose User-->
         <scene sceneID="BVj-dp-j0P">
             <objects>
-                <viewController id="1qZ-rd-dcb" sceneMemberID="viewController">
+                <viewController id="1qZ-rd-dcb" customClass="ChooseUser" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e9s-sn-5N1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,7 +110,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="rnf-9h-vRQ" kind="show" id="b42-5S-3qa"/>
+                                    <action selector="btnDonatur:" destination="1qZ-rd-dcb" eventType="touchUpInside" id="6JH-A6-cBX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQB-Hi-7nF">
@@ -122,22 +122,28 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GoC-F0-1da" kind="show" id="u2a-l2-Si5"/>
+                                    <action selector="btnKomunitas:" destination="1qZ-rd-dcb" eventType="touchUpInside" id="fYx-Gw-idi"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6pp-qe-XKI"/>
                     </view>
+                    <connections>
+                        <outlet property="lblBtnDonatur" destination="bTd-W1-7vD" id="ngW-RZ-z6a"/>
+                        <outlet property="lblBtnKomunitas" destination="DQB-Hi-7nF" id="AVb-qu-aaF"/>
+                        <segue destination="rnf-9h-vRQ" kind="show" id="BZy-JE-BDM"/>
+                        <segue destination="GoC-F0-1da" kind="show" id="mYF-Zg-dDw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk3-zb-qnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-865" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Regis Donatur-->
         <scene sceneID="mgQ-vm-0tH">
             <objects>
-                <viewController id="rnf-9h-vRQ" sceneMemberID="viewController">
+                <viewController id="rnf-9h-vRQ" customClass="RegisDonatur" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kid-Iz-QLV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -234,10 +240,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="-44" y="-597"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Donatur-->
         <scene sceneID="eV8-Wk-VtX">
             <objects>
-                <viewController id="c7g-Nn-ic8" sceneMemberID="viewController">
+                <viewController id="c7g-Nn-ic8" customClass="LoginDonatur" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fyu-MH-4T6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1189,10 +1195,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="1341.5999999999999" y="646.55172413793105"/>
         </scene>
-        <!--View Controller-->
+        <!--Regis Komunitas-->
         <scene sceneID="TIq-Ye-mhu">
             <objects>
-                <viewController id="GoC-F0-1da" sceneMemberID="viewController">
+                <viewController id="GoC-F0-1da" customClass="RegisKomunitas" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="skN-gR-odL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1289,10 +1295,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="726" y="-597"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Komunitas-->
         <scene sceneID="lLP-7W-8mT">
             <objects>
-                <viewController id="9fZ-eb-6tr" sceneMemberID="viewController">
+                <viewController id="9fZ-eb-6tr" customClass="LoginKomunitas" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S1L-VQ-cFS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
