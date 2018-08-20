@@ -673,10 +673,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="1341.5999999999999" y="1301.9704433497539"/>
         </scene>
-        <!--View Controller-->
+        <!--Jenis Makanan-->
         <scene sceneID="Aed-Ds-Huw">
             <objects>
-                <viewController id="J1m-FE-npp" sceneMemberID="viewController">
+                <viewController id="J1m-FE-npp" customClass="JenisMakanan" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MLg-j8-cQm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -800,10 +800,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="588" y="1302"/>
         </scene>
-        <!--View Controller-->
+        <!--Jenis Minuman-->
         <scene sceneID="Ear-WA-WJa">
             <objects>
-                <viewController id="Ony-AV-cy6" sceneMemberID="viewController">
+                <viewController id="Ony-AV-cy6" customClass="JenisMinuman" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x5B-ak-3e1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1036,10 +1036,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="3308" y="1371.4285714285716"/>
         </scene>
-        <!--View Controller-->
+        <!--Jenis Bahan Makanan-->
         <scene sceneID="mOF-S7-8gn">
             <objects>
-                <viewController id="snv-tW-mJn" sceneMemberID="viewController">
+                <viewController id="snv-tW-mJn" customClass="JenisBahanMakanan" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udz-Zf-2YT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
