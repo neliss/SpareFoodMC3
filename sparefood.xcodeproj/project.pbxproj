@@ -15,6 +15,12 @@
 		11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
+		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
+		9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */; };
+		9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4D212AC5130018F8AA /* RegisDonatur.swift */; };
+		9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4F212AC53C0018F8AA /* LoginDonatur.swift */; };
+		9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB53212AC5BE0018F8AA /* RegisKomunitas.swift */; };
+		9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB55212AC5D70018F8AA /* LoginKomunitas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,12 @@
 		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
 		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9146BB47212AC45B0018F8AA /* HomeDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDonatur.swift; sourceTree = "<group>"; };
+		9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKomunitas.swift; sourceTree = "<group>"; };
+		9146BB4D212AC5130018F8AA /* RegisDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisDonatur.swift; sourceTree = "<group>"; };
+		9146BB4F212AC53C0018F8AA /* LoginDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDonatur.swift; sourceTree = "<group>"; };
+		9146BB53212AC5BE0018F8AA /* RegisKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisKomunitas.swift; sourceTree = "<group>"; };
+		9146BB55212AC5D70018F8AA /* LoginKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginKomunitas.swift; sourceTree = "<group>"; };
 		D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +59,6 @@
 		11B1FF732122A3B600C739A5 = {
 			isa = PBXGroup;
 			children = (
-				11B1FF962122A3E000C739A5 /* New Group */,
 				11B1FF7E2122A3B600C739A5 /* sparefood */,
 				11B1FF7D2122A3B600C739A5 /* Products */,
 				29FE5634B121B950A90573E7 /* Pods */,
@@ -66,9 +77,9 @@
 		11B1FF7E2122A3B600C739A5 /* sparefood */ = {
 			isa = PBXGroup;
 			children = (
-				11B1FF7F2122A3B600C739A5 /* AppDelegate.swift */,
-				11B1FF812122A3B600C739A5 /* ViewController.swift */,
-				11B1FF892122A3B800C739A5 /* Assets.xcassets */,
+				9146BB24212AB9BC0018F8AA /* Model */,
+				9146BB23212AB9820018F8AA /* Controller */,
+				11B1FF962122A3E000C739A5 /* View */,
 				11B1FF8E2122A3B800C739A5 /* Info.plist */,
 				11B1FF862122A3B600C739A5 /* sparefood.xcdatamodeld */,
 				2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */,
@@ -76,13 +87,13 @@
 			path = sparefood;
 			sourceTree = "<group>";
 		};
-		11B1FF962122A3E000C739A5 /* New Group */ = {
+		11B1FF962122A3E000C739A5 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */,
 				11B1FF832122A3B600C739A5 /* Main.storyboard */,
 			);
-			path = "New Group";
+			path = View;
 			sourceTree = "<group>";
 		};
 		29FE5634B121B950A90573E7 /* Pods */ = {
@@ -92,6 +103,325 @@
 				709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9146BB23212AB9820018F8AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB27212ABE2D0018F8AA /* User */,
+				11B1FF812122A3B600C739A5 /* ViewController.swift */,
+				11B1FF7F2122A3B600C739A5 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9146BB24212AB9BC0018F8AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11B1FF892122A3B800C739A5 /* Assets.xcassets */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9146BB25212ABDF80018F8AA /* HomeK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */,
+				9146BB3A212AC1AA0018F8AA /* Jenis Donasi */,
+			);
+			path = HomeK;
+			sourceTree = "<group>";
+		};
+		9146BB27212ABE2D0018F8AA /* User */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB29212ABE450018F8AA /* Donatur */,
+				9146BB28212ABE3E0018F8AA /* Komunitas */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9146BB28212ABE3E0018F8AA /* Komunitas */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB51212AC5780018F8AA /* RegisK */,
+				9146BB52212AC5800018F8AA /* LoginK */,
+				9146BB2E212ABF460018F8AA /* RequestK */,
+				9146BB2C212ABEB00018F8AA /* ProfileK */,
+				9146BB25212ABDF80018F8AA /* HomeK */,
+			);
+			path = Komunitas;
+			sourceTree = "<group>";
+		};
+		9146BB29212ABE450018F8AA /* Donatur */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB4C212AC4E30018F8AA /* RegisD */,
+				9146BB4B212AC4CE0018F8AA /* LoginD */,
+				9146BB2D212ABF340018F8AA /* RequestD */,
+				9146BB2B212ABE9B0018F8AA /* ProfileD */,
+				9146BB2A212ABE930018F8AA /* HomeD */,
+			);
+			path = Donatur;
+			sourceTree = "<group>";
+		};
+		9146BB2A212ABE930018F8AA /* HomeD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB47212AC45B0018F8AA /* HomeDonatur.swift */,
+				9146BB2F212ABF920018F8AA /* Jenis Donasi */,
+			);
+			path = HomeD;
+			sourceTree = "<group>";
+		};
+		9146BB2B212ABE9B0018F8AA /* ProfileD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileD;
+			sourceTree = "<group>";
+		};
+		9146BB2C212ABEB00018F8AA /* ProfileK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileK;
+			sourceTree = "<group>";
+		};
+		9146BB2D212ABF340018F8AA /* RequestD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestD;
+			sourceTree = "<group>";
+		};
+		9146BB2E212ABF460018F8AA /* RequestK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestK;
+			sourceTree = "<group>";
+		};
+		9146BB2F212ABF920018F8AA /* Jenis Donasi */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB30212ABFA90018F8AA /* MakananD */,
+				9146BB31212ABFB30018F8AA /* MinumanD */,
+				9146BB32212ABFC30018F8AA /* Bahan makanD */,
+				9146BB33212ABFD70018F8AA /* UangD */,
+			);
+			path = "Jenis Donasi";
+			sourceTree = "<group>";
+		};
+		9146BB30212ABFA90018F8AA /* MakananD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB39212AC0D90018F8AA /* Jenis Makd */,
+				9146BB36212AC07B0018F8AA /* DeskripMakd */,
+			);
+			path = MakananD;
+			sourceTree = "<group>";
+		};
+		9146BB31212ABFB30018F8AA /* MinumanD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB38212AC0C90018F8AA /* Jenis Md */,
+				9146BB35212AC0660018F8AA /* DeskripMd */,
+			);
+			path = MinumanD;
+			sourceTree = "<group>";
+		};
+		9146BB32212ABFC30018F8AA /* Bahan makanD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB37212AC0BD0018F8AA /* Jenis BMd */,
+				9146BB34212AC04B0018F8AA /* DeskripBMd */,
+			);
+			path = "Bahan makanD";
+			sourceTree = "<group>";
+		};
+		9146BB33212ABFD70018F8AA /* UangD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UangD;
+			sourceTree = "<group>";
+		};
+		9146BB34212AC04B0018F8AA /* DeskripBMd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeskripBMd;
+			sourceTree = "<group>";
+		};
+		9146BB35212AC0660018F8AA /* DeskripMd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeskripMd;
+			sourceTree = "<group>";
+		};
+		9146BB36212AC07B0018F8AA /* DeskripMakd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DeskripMakd;
+			sourceTree = "<group>";
+		};
+		9146BB37212AC0BD0018F8AA /* Jenis BMd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Jenis BMd";
+			sourceTree = "<group>";
+		};
+		9146BB38212AC0C90018F8AA /* Jenis Md */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Jenis Md";
+			sourceTree = "<group>";
+		};
+		9146BB39212AC0D90018F8AA /* Jenis Makd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Jenis Makd";
+			sourceTree = "<group>";
+		};
+		9146BB3A212AC1AA0018F8AA /* Jenis Donasi */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB3C212AC1C50018F8AA /* MakananK */,
+				9146BB3D212AC1C70018F8AA /* MinumanK */,
+				9146BB3E212AC1CA0018F8AA /* Bahan makananK */,
+				9146BB3B212AC1BB0018F8AA /* UangK */,
+			);
+			path = "Jenis Donasi";
+			sourceTree = "<group>";
+		};
+		9146BB3B212AC1BB0018F8AA /* UangK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB45212AC2770018F8AA /* List Donatur U */,
+				9146BB46212AC2860018F8AA /* Deskrip Donasi U */,
+			);
+			path = UangK;
+			sourceTree = "<group>";
+		};
+		9146BB3C212AC1C50018F8AA /* MakananK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB41212AC2170018F8AA /* List Donatur Mak */,
+				9146BB44212AC2600018F8AA /* Deskrip Donasi Mak */,
+			);
+			path = MakananK;
+			sourceTree = "<group>";
+		};
+		9146BB3D212AC1C70018F8AA /* MinumanK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB43212AC2330018F8AA /* Deskrip Donasi M */,
+				9146BB40212AC20A0018F8AA /* List Donatur M */,
+			);
+			path = MinumanK;
+			sourceTree = "<group>";
+		};
+		9146BB3E212AC1CA0018F8AA /* Bahan makananK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB3F212AC1F70018F8AA /* List Donatur BM */,
+				9146BB42212AC2250018F8AA /* Deskrip Donasi BM */,
+			);
+			path = "Bahan makananK";
+			sourceTree = "<group>";
+		};
+		9146BB3F212AC1F70018F8AA /* List Donatur BM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List Donatur BM";
+			sourceTree = "<group>";
+		};
+		9146BB40212AC20A0018F8AA /* List Donatur M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List Donatur M";
+			sourceTree = "<group>";
+		};
+		9146BB41212AC2170018F8AA /* List Donatur Mak */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List Donatur Mak";
+			sourceTree = "<group>";
+		};
+		9146BB42212AC2250018F8AA /* Deskrip Donasi BM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Deskrip Donasi BM";
+			sourceTree = "<group>";
+		};
+		9146BB43212AC2330018F8AA /* Deskrip Donasi M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Deskrip Donasi M";
+			sourceTree = "<group>";
+		};
+		9146BB44212AC2600018F8AA /* Deskrip Donasi Mak */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Deskrip Donasi Mak";
+			sourceTree = "<group>";
+		};
+		9146BB45212AC2770018F8AA /* List Donatur U */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "List Donatur U";
+			sourceTree = "<group>";
+		};
+		9146BB46212AC2860018F8AA /* Deskrip Donasi U */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Deskrip Donasi U";
+			sourceTree = "<group>";
+		};
+		9146BB4B212AC4CE0018F8AA /* LoginD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB4F212AC53C0018F8AA /* LoginDonatur.swift */,
+			);
+			path = LoginD;
+			sourceTree = "<group>";
+		};
+		9146BB4C212AC4E30018F8AA /* RegisD */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB4D212AC5130018F8AA /* RegisDonatur.swift */,
+			);
+			path = RegisD;
+			sourceTree = "<group>";
+		};
+		9146BB51212AC5780018F8AA /* RegisK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB53212AC5BE0018F8AA /* RegisKomunitas.swift */,
+			);
+			path = RegisK;
+			sourceTree = "<group>";
+		};
+		9146BB52212AC5800018F8AA /* LoginK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB55212AC5D70018F8AA /* LoginKomunitas.swift */,
+			);
+			path = LoginK;
 			sourceTree = "<group>";
 		};
 		F323F8DF11D49687F3997F87 /* Frameworks */ = {
@@ -220,7 +550,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B1FF822122A3B600C739A5 /* ViewController.swift in Sources */,
+				9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */,
 				11B1FF802122A3B600C739A5 /* AppDelegate.swift in Sources */,
+				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
+				9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */,
+				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
+				9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */,
+				9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */,
 				11B1FF882122A3B600C739A5 /* sparefood.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
