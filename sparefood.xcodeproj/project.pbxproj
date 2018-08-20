@@ -13,6 +13,8 @@
 		11B1FF882122A3B600C739A5 /* sparefood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FF862122A3B600C739A5 /* sparefood.xcdatamodeld */; };
 		11B1FF8A2122A3B800C739A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FF892122A3B800C739A5 /* Assets.xcassets */; };
 		11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */; };
+		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
+		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		11B1FF892122A3B800C739A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B1FF8C2122A3B800C739A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11B1FF8E2122A3B800C739A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
+		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +47,11 @@
 		11B1FF732122A3B600C739A5 = {
 			isa = PBXGroup;
 			children = (
+				11B1FF962122A3E000C739A5 /* New Group */,
 				11B1FF7E2122A3B600C739A5 /* sparefood */,
 				11B1FF7D2122A3B600C739A5 /* Products */,
+				29FE5634B121B950A90573E7 /* Pods */,
+				F323F8DF11D49687F3997F87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +68,38 @@
 			children = (
 				11B1FF7F2122A3B600C739A5 /* AppDelegate.swift */,
 				11B1FF812122A3B600C739A5 /* ViewController.swift */,
-				11B1FF832122A3B600C739A5 /* Main.storyboard */,
 				11B1FF892122A3B800C739A5 /* Assets.xcassets */,
-				11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */,
 				11B1FF8E2122A3B800C739A5 /* Info.plist */,
 				11B1FF862122A3B600C739A5 /* sparefood.xcdatamodeld */,
+				2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */,
 			);
 			path = sparefood;
+			sourceTree = "<group>";
+		};
+		11B1FF962122A3E000C739A5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */,
+				11B1FF832122A3B600C739A5 /* Main.storyboard */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		29FE5634B121B950A90573E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */,
+				709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F323F8DF11D49687F3997F87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				735205D17A57BBAB5199F740 /* Pods_sparefood.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11B1FF912122A3B800C739A5 /* Build configuration list for PBXNativeTarget "sparefood" */;
 			buildPhases = (
+				F0863E1241E79421978F28EA /* [CP] Check Pods Manifest.lock */,
 				11B1FF782122A3B600C739A5 /* Sources */,
 				11B1FF792122A3B600C739A5 /* Frameworks */,
 				11B1FF7A2122A3B600C739A5 /* Resources */,
+				0473F86B48A68995AF534D2B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +163,56 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */,
+				2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */,
 				11B1FF8A2122A3B800C739A5 /* Assets.xcassets in Resources */,
 				11B1FF852122A3B600C739A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0473F86B48A68995AF534D2B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sparefood/Pods-sparefood-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sparefood/Pods-sparefood-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0863E1241E79421978F28EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sparefood-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		11B1FF782122A3B600C739A5 /* Sources */ = {
@@ -282,9 +363,11 @@
 		};
 		11B1FF922122A3B800C739A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29LM4FT5NH;
 				INFOPLIST_FILE = sparefood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,9 +382,11 @@
 		};
 		11B1FF932122A3B800C739A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 29LM4FT5NH;
 				INFOPLIST_FILE = sparefood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
