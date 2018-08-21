@@ -132,8 +132,8 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                     <connections>
                         <outlet property="lblBtnDonatur" destination="bTd-W1-7vD" id="ngW-RZ-z6a"/>
                         <outlet property="lblBtnKomunitas" destination="DQB-Hi-7nF" id="AVb-qu-aaF"/>
-                        <segue destination="rnf-9h-vRQ" kind="show" id="BZy-JE-BDM"/>
-                        <segue destination="GoC-F0-1da" kind="show" id="mYF-Zg-dDw"/>
+                        <segue destination="rnf-9h-vRQ" kind="show" identifier="keDonatur" id="BZy-JE-BDM"/>
+                        <segue destination="GoC-F0-1da" kind="show" identifier="kePenerima" id="mYF-Zg-dDw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk3-zb-qnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1821,6 +1821,6 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
         <segue reference="v5m-bB-SSU"/>
         <segue reference="nxO-dU-dvk"/>
         <segue reference="J8g-Du-rWc"/>
-        <segue reference="jMC-iW-whs"/>
+        <segue reference="3xo-YW-wPl"/>
     </inferredMetricsTieBreakers>
 </document>

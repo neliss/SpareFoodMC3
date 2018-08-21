@@ -16,9 +16,13 @@ class ChooseUser: UIViewController {
     @IBOutlet weak var lblBtnKomunitas: UIButton!
     
     @IBAction func btnDonatur(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "keDonatur", sender: self)
     }
     
     @IBAction func btnKomunitas(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "keKomunitas", sender: self)
     }
     
     
