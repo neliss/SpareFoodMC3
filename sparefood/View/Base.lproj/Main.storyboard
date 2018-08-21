@@ -717,11 +717,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                     <connections>
                         <segue destination="snv-tW-mJn" kind="show" id="YhK-La-g0z"/>
                         <segue destination="WUj-k2-8fm" kind="show" id="SG3-Yz-9DR"/>
-<<<<<<< HEAD
+
                         <segue destination="O15-r9-EmD" kind="show" id="zs4-cu-e2u"/>
-=======
-                        <segue destination="O15-r9-EmD" kind="show" id="znX-Qh-DVG"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g8g-vh-d7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1017,11 +1015,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOW-dh-wmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="2289" y="1917"/>
-=======
-            <point key="canvasLocation" x="2136.8000000000002" y="1916.7487684729065"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         </scene>
         <!--Deskripsi Makanan-->
         <scene sceneID="nzT-wq-3d8">
@@ -1145,11 +1141,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToE-ap-kGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="3145" y="1091"/>
-=======
-            <point key="canvasLocation" x="3078" y="1091"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         </scene>
         <!--Jenis Bahan Makanan-->
         <scene sceneID="mOF-S7-8gn">
@@ -1179,13 +1173,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wan-2H-BdU">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnSauce:" destination="snv-tW-mJn" eventType="touchUpInside" id="v6D-vd-nuv"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82745098039215681" green="0.93333333333333335" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1212,14 +1205,13 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAT-hZ-dCn">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnKecap:" destination="snv-tW-mJn" eventType="touchUpInside" id="Zbf-DZ-UvW"/>
                                             <action selector="btnMinyak:" destination="snv-tW-mJn" eventType="touchUpInside" id="dcB-5P-Ort"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176470588238" green="0.76470588235294112" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1246,13 +1238,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYf-nz-ewQ">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnMinyak:" destination="snv-tW-mJn" eventType="touchUpInside" id="SWO-pI-Ukb"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.92941176470588238" blue="0.71764705882352942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1331,13 +1322,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hAW-TR-T48">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnTepung:" destination="snv-tW-mJn" eventType="touchUpInside" id="JP8-vR-c8K"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.81960784310000001" green="0.74509803919999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1364,13 +1354,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pob-ek-iHc">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnBumbuDapur:" destination="snv-tW-mJn" eventType="touchUpInside" id="7pb-h9-cMv"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.92941176469999998" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1397,13 +1386,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiF-mr-Bld">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
-<<<<<<< HEAD
+
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="btnMieInstant:" destination="snv-tW-mJn" eventType="touchUpInside" id="S8j-Jb-OAe"/>
                                         </connections>
-=======
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.76470588240000004" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1440,11 +1428,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bb-w5-ZvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="2289" y="349"/>
-=======
-            <point key="canvasLocation" x="1576.8" y="408.62068965517244"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         </scene>
         <!--Regis Komunitas-->
         <scene sceneID="TIq-Ye-mhu">
@@ -2033,11 +2019,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trq-Kr-m2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="3145" y="1917"/>
-=======
-            <point key="canvasLocation" x="3077.5999999999999" y="408.62068965517244"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         </scene>
         <!--Deskripsi Bahan Makanan-->
         <scene sceneID="bIO-2k-ZUh">
@@ -2161,11 +2145,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm4-FS-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="3145" y="349"/>
-=======
-            <point key="canvasLocation" x="3078" y="1829"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         </scene>
         <!--Donasi Uang-->
         <scene sceneID="KGE-sn-xvQ">
@@ -2348,11 +2330,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8e-VW-GYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="1500" y="-369"/>
-=======
-            <point key="canvasLocation" x="2288.8000000000002" y="408.62068965517244"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
         </scene>
     </scenes>
     <resources>
@@ -2387,16 +2365,13 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R2o-QW-hYP"/>
-<<<<<<< HEAD
+
         <segue reference="YhK-La-g0z"/>
         <segue reference="dZf-bk-Np0"/>
         <segue reference="v5m-bB-SSU"/>
         <segue reference="k9L-J7-v0q"/>
         <segue reference="4fT-N8-gD0"/>
-=======
-        <segue reference="frj-MI-Ekw"/>
-        <segue reference="7lj-Nq-SFg"/>
->>>>>>> b39a83e9e57e338d949b2160d5408db55656d154
+
         <segue reference="J8g-Du-rWc"/>
         <segue reference="3xo-YW-wPl"/>
     </inferredMetricsTieBreakers>
