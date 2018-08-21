@@ -693,6 +693,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5o-d4-wB5">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnMakananKering:" destination="J1m-FE-npp" eventType="touchUpInside" id="cAC-yo-hfV"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Makanan Kering" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAh-9I-Ct4">
                                         <rect key="frame" x="9" y="136" width="138" height="22"/>
@@ -778,12 +781,14 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <viewLayoutGuide key="safeArea" id="9fr-76-9Bh"/>
                     </view>
                     <connections>
+                        <outlet property="lblBtnMakananKering" destination="J5o-d4-wB5" id="a8k-YG-fZi"/>
                         <segue destination="Mc5-LQ-aBp" kind="show" id="ND5-is-AGb"/>
+                        <segue destination="Z2L-0L-HEj" kind="show" identifier="swipeRight" id="7lj-Nq-SFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDT-xK-bUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073" y="647"/>
+            <point key="canvasLocation" x="2072.8000000000002" y="646.55172413793105"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gNT-AE-oCe">
@@ -830,6 +835,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2p-cH-d7t">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnSusu:" destination="Ony-AV-cy6" eventType="touchUpInside" id="fxP-Ha-YHc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.72156862749999995" green="0.95294117649999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -849,6 +857,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-9Z-6fg">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnAirMineral:" destination="Ony-AV-cy6" eventType="touchUpInside" id="zlT-ft-vfd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.85882352939999995" green="0.72549019609999998" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -871,6 +882,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMO-Lb-Cmf">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="btnTeh:" destination="Ony-AV-cy6" eventType="touchUpInside" id="FID-iG-LyA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.95294117649999999" green="0.93333333330000001" blue="0.69019607839999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -896,6 +910,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-hH-aWC">
                                 <rect key="frame" x="200" y="360" width="148" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="btnIsotonic:" destination="Ony-AV-cy6" eventType="touchUpInside" id="pRY-Sc-tL3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minuman Isotonik" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qP0-ik-kCs">
                                 <rect key="frame" x="226" y="487" width="94" height="22"/>
@@ -918,10 +935,17 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fdK-Av-JQf"/>
                     </view>
+                    <connections>
+                        <outlet property="lblBtnAirMineral" destination="L8T-9Z-6fg" id="IF5-IM-aj4"/>
+                        <outlet property="lblBtnIsotonic" destination="WGK-hH-aWC" id="d42-Gb-Nlm"/>
+                        <outlet property="lblBtnSusu" destination="I2p-cH-d7t" id="YTJ-xR-6io"/>
+                        <outlet property="lblBtnTeh" destination="sMO-Lb-Cmf" id="QA4-6N-N9X"/>
+                        <segue destination="Z2L-0L-HEj" kind="show" identifier="swipeRight" id="4fT-N8-gD0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOW-dh-wmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1663" y="2039"/>
+            <point key="canvasLocation" x="1582" y="2039"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nzT-wq-3d8">
@@ -1190,10 +1214,13 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="RF7-DG-DXW"/>
                     </view>
+                    <connections>
+                        <segue destination="Z2L-0L-HEj" kind="show" identifier="swipeRight" id="nxO-dU-dvk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2bb-w5-ZvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1341.5999999999999" y="646.55172413793105"/>
+            <point key="canvasLocation" x="1401" y="647"/>
         </scene>
         <!--Regis Komunitas-->
         <scene sceneID="TIq-Ye-mhu">
@@ -1792,7 +1819,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
     <inferredMetricsTieBreakers>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="v5m-bB-SSU"/>
-        <segue reference="Zfz-Nu-tJm"/>
+        <segue reference="nxO-dU-dvk"/>
         <segue reference="J8g-Du-rWc"/>
         <segue reference="jMC-iW-whs"/>
     </inferredMetricsTieBreakers>

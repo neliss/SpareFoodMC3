@@ -10,10 +10,21 @@ import UIKit
 
 class JenisMakanan: UIViewController {
 
+    @IBOutlet weak var lblBtnMakananKering: UIButton!
+    @IBAction func btnMakananKering(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(rightSwipe)
+        
     }
 
     override func didReceiveMemoryWarning() {
