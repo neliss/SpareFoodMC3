@@ -10,6 +10,15 @@ import UIKit
 
 class JenisBahanMakanan: UIViewController {
 
+    @IBOutlet weak var lblBtnBeras: UIButton!
+    @IBAction func btnBeras(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnTelur: UIButton!
+    @IBAction func btnTelur(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

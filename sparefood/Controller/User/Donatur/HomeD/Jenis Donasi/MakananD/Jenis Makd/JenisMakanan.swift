@@ -14,6 +14,20 @@ class JenisMakanan: UIViewController {
     @IBAction func btnMakananKering(_ sender: UIButton) {
     }
     
+    @IBOutlet weak var lblBtnMakananBasah: UIButton!
+    @IBAction func btnMakananBasah(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnMakananJadi: UIButton!
+    @IBAction func btnMakananJadi(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnBuah: UIButton!
+    @IBAction func btnBuah(_ sender: UIButton) {
+    }
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
