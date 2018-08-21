@@ -1,24 +1,19 @@
 //
-//  DeskripsiMakanan.swift
+//  DonasiUang.swift
 //  sparefood
 //
-//  Created by muhammad sutrisno on 20/08/18.
+//  Created by muhammad sutrisno on 21/08/18.
 //  Copyright © 2018 Nelis Lasta. All rights reserved.
 //
 
 import UIKit
 
-class DeskripsiMakanan: UIViewController {
+class DonasiUang: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        let rightSwipe = UISwipeGestureRecognizer(target: self, action:#selector(swipeAction(swipe:)))
-        
-        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
-        self.view.addGestureRecognizer(rightSwipe)
     }
 
     override func didReceiveMemoryWarning() {

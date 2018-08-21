@@ -14,6 +14,11 @@ class DeskripsiBahanMakanan: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action:#selector(swipeAction(swipe:)))
+        
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(rightSwipe)
     }
 
     override func didReceiveMemoryWarning() {

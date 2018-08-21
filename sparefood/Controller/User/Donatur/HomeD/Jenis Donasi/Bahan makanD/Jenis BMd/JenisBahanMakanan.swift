@@ -18,6 +18,34 @@ class JenisBahanMakanan: UIViewController {
     @IBAction func btnTelur(_ sender: UIButton) {
     }
     
+    @IBOutlet weak var lblBtnMinyak: UIButton!
+    @IBAction func btnMinyak(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnKecap: UIButton!
+    @IBAction func btnKecap(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnSauce: UIButton!
+    @IBAction func btnSauce(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnTepung: UIButton!
+    @IBAction func btnTepung(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnBumbuDapur: UIButton!
+    @IBAction func btnBumbuDapur(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnMieInstant: UIButton!
+    @IBAction func btnMieInstant(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
