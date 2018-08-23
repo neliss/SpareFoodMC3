@@ -74,10 +74,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="-1974" y="50"/>
         </scene>
-        <!--Scrollview-->
+        <!--View Controller-->
         <scene sceneID="ulv-Eg-X54">
             <objects>
-                <viewController id="pCz-P1-2GD" customClass="Scrollview" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pCz-P1-2GD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mH-jM-bvj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
