@@ -29,6 +29,7 @@
 		9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB62212B11D30018F8AA /* DeskripsiMinuman.swift */; };
 		9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */; };
 		9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */; };
+		9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB68212C110E0018F8AA /* DonasiUang.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		9146BB62212B11D30018F8AA /* DeskripsiMinuman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskripsiMinuman.swift; sourceTree = "<group>"; };
 		9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenisBahanMakanan.swift; sourceTree = "<group>"; };
 		9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskripsiBahanMakanan.swift; sourceTree = "<group>"; };
+		9146BB68212C110E0018F8AA /* DonasiUang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonasiUang.swift; sourceTree = "<group>"; };
 		D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +263,7 @@
 		9146BB33212ABFD70018F8AA /* UangD */ = {
 			isa = PBXGroup;
 			children = (
+				9146BB68212C110E0018F8AA /* DonasiUang.swift */,
 			);
 			path = UangD;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */,
 				9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */,
 				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
+				9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */,
 				9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */,
 				9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */,
 				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
