@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,18 +21,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="nLI-zh-nu9">
                                 <rect key="frame" x="0.0" y="44" width="375" height="734"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlC-s2-sK7">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlC-s2-sK7">
                                 <rect key="frame" x="306" y="682" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1qZ-rd-dcb" kind="show" id="jMC-iW-whs"/>
+                                    <segue destination="XSk-PT-W3W" kind="show" id="TGS-1Y-Nmq"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7JT-PS-Dc2">
-                                <rect key="frame" x="50" y="281" width="274" height="318"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-OX-Poc">
+                                <rect key="frame" x="137" y="142" width="100" height="100"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7JT-PS-Dc2">
+                                <rect key="frame" x="50" y="314" width="274" height="318"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="318" id="i1w-D2-zRI"/>
+                                </constraints>
                                 <string key="text">Spare Food memungkinkan donatur terhubung dengan bank makanan lokal untuk bisa menyumbangkan makanannya. 
 donatur dapat dengan mudah memposting makanan apa yang mereka miliki dan mengatur  tenggang waktu untuk pengambilan . Bank makanan lokal dapat notifikasi  makanan yang ada dalam radius 10 mil. 
 Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makanan yang tidak perlu .
@@ -43,45 +48,65 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-OX-Poc">
-                                <rect key="frame" x="137" y="142" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7JT-PS-Dc2" secondAttribute="bottom" constant="104" id="3Zv-eM-apG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7JT-PS-Dc2" secondAttribute="bottom" constant="146" id="3Zv-eM-apG"/>
+                            <constraint firstItem="7JT-PS-Dc2" firstAttribute="centerX" secondItem="fmZ-OX-Poc" secondAttribute="centerX" id="4QQ-e3-xYm"/>
+                            <constraint firstAttribute="trailing" secondItem="AlC-s2-sK7" secondAttribute="trailing" constant="37" id="6WS-zp-Hvi"/>
+                            <constraint firstItem="AlC-s2-sK7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="85h-QD-ddr"/>
+                            <constraint firstItem="AlC-s2-sK7" firstAttribute="top" secondItem="7JT-PS-Dc2" secondAttribute="bottom" constant="50" id="Ed6-MC-PYO"/>
                             <constraint firstItem="nLI-zh-nu9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KW5-S5-RGn"/>
                             <constraint firstItem="nLI-zh-nu9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NdO-33-478"/>
                             <constraint firstItem="nLI-zh-nu9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R7v-ai-aTd"/>
                             <constraint firstAttribute="trailing" secondItem="nLI-zh-nu9" secondAttribute="trailing" id="TC8-UM-3hR"/>
                             <constraint firstItem="7JT-PS-Dc2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Ufd-U1-Iho"/>
                             <constraint firstItem="nLI-zh-nu9" firstAttribute="centerX" secondItem="7JT-PS-Dc2" secondAttribute="centerX" id="f34-AE-deg"/>
+                            <constraint firstItem="7JT-PS-Dc2" firstAttribute="top" secondItem="fmZ-OX-Poc" secondAttribute="bottom" constant="72" id="hLZ-K5-rZF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="1qZ-rd-dcb" kind="show" id="3xo-YW-wPl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1974" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Scoll View Controller-->
         <scene sceneID="ulv-Eg-X54">
             <objects>
-                <viewController id="pCz-P1-2GD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Page1" id="pCz-P1-2GD" customClass="ScollViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5mH-jM-bvj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image kids 1" translatesAutoresizingMaskIntoConstraints="NO" id="roO-ZH-Ee2">
+                                <rect key="frame" x="-2" y="0.0" width="377" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="9 million children in Indonesia still suffer from malnutrition" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxa-my-IMh">
+                                <rect key="frame" x="64" y="560" width="248" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.17254901960784313" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1zb-jc-OZA"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QF2-JN-LDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2594" y="799"/>
+            <point key="canvasLocation" x="-2594.4000000000001" y="798.76847290640399"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="g3b-bT-OMT">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XSk-PT-W3W" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fK8-lx-xZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3340" y="799"/>
         </scene>
         <!--Choose User-->
         <scene sceneID="BVj-dp-j0P">
@@ -91,9 +116,6 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="loo-mB-w5H">
-                                <rect key="frame" x="0.0" y="-1449" width="375" height="1422"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eff9875b-6da8-465e-a4b4-9673c613c1e9" translatesAutoresizingMaskIntoConstraints="NO" id="9KU-8R-CeW">
                                 <rect key="frame" x="67" y="152" width="240" height="200"/>
                             </imageView>
@@ -148,7 +170,6 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                             <constraint firstItem="DQB-Hi-7nF" firstAttribute="top" secondItem="edk-cy-Y6F" secondAttribute="bottom" constant="9" id="hTm-Km-Anp"/>
                             <constraint firstItem="DQB-Hi-7nF" firstAttribute="top" secondItem="edk-cy-Y6F" secondAttribute="bottom" constant="9" id="lyz-vn-gxa"/>
                             <constraint firstItem="9n3-XF-rnt" firstAttribute="top" secondItem="6pp-qe-XKI" secondAttribute="top" constant="54" id="rA1-KK-PR8"/>
-                            <constraint firstItem="9KU-8R-CeW" firstAttribute="top" secondItem="loo-mB-w5H" secondAttribute="bottom" constant="179" id="rSW-rt-cOQ"/>
                             <constraint firstItem="9n3-XF-rnt" firstAttribute="leading" secondItem="6pp-qe-XKI" secondAttribute="leading" constant="28" id="tsg-yt-KwL"/>
                             <constraint firstItem="6pp-qe-XKI" firstAttribute="bottom" secondItem="DQB-Hi-7nF" secondAttribute="bottom" constant="137" id="ulM-x4-yup"/>
                         </constraints>
@@ -163,7 +184,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk3-zb-qnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-983" y="50"/>
+            <point key="canvasLocation" x="-983.20000000000005" y="49.50738916256158"/>
         </scene>
         <!--Regis Donatur-->
         <scene sceneID="mgQ-vm-0tH">
@@ -393,11 +414,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="txW-Lv-xAs">
-                                <rect key="frame" x="-11" y="-1" width="388" height="86"/>
+                                <rect key="frame" x="-11" y="-1" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-7L-yfJ">
-                                <rect key="frame" x="306" y="44" width="60" height="30"/>
+                                <rect key="frame" x="299" y="45" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Out"/>
                             </button>
@@ -420,11 +441,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="GQk-Jp-eXl">
-                                <rect key="frame" x="0.0" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tWt-Bd-dM0">
-                                <rect key="frame" x="142" y="10" width="90" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -833,11 +854,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="3fq-9C-ohd">
-                                <rect key="frame" x="-15" y="0.0" width="390" height="86"/>
+                                <rect key="frame" x="-15" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Makanan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJY-Hn-dW5">
-                                <rect key="frame" x="108" y="23" width="159" height="75"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -877,7 +898,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OSw-Ru-AkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="1046"/>
+            <point key="canvasLocation" x="41" y="1069"/>
         </scene>
         <!--Jenis Minuman-->
         <scene sceneID="Ear-WA-WJa">
@@ -988,11 +1009,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <color key="backgroundColor" red="0.96078431369999995" green="0.75686274509999996" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="olA-8C-pWf">
-                                <rect key="frame" x="-8" y="0.0" width="390" height="90"/>
+                                <rect key="frame" x="-8" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minuman" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4u-AD-OpH">
-                                <rect key="frame" x="108" y="32" width="159" height="62"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1024,11 +1045,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="kBi-3z-CCS">
-                                <rect key="frame" x="-7" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="-7" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post A New Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azr-8S-9Fk">
-                                <rect key="frame" x="105" y="11" width="165" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1197,7 +1218,7 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="cSR-9P-HkL">
-                                <rect key="frame" x="-15" y="0.0" width="390" height="87"/>
+                                <rect key="frame" x="-15" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJJ-pA-vCf">
@@ -1332,7 +1353,7 @@ CA
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="130"/>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80392156862745101" green="0.93725490196078431" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.88821809557851583" green="1" blue="0.97157922965327337" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="1Ys-FV-FqF" secondAttribute="bottom" id="0WL-R0-bXX"/>
                                     <constraint firstItem="1Ys-FV-FqF" firstAttribute="top" secondItem="bIe-6e-Na3" secondAttribute="top" id="2f6-mK-fOs"/>
@@ -1428,7 +1449,7 @@ CA
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bahan Makanan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srQ-8j-lrH">
-                                <rect key="frame" x="107" y="11" width="159" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1648,11 +1669,11 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-WT-poG">
-                                <rect key="frame" x="0.0" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List Donation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgk-9d-b2x">
-                                <rect key="frame" x="115" y="10" width="159" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1713,7 +1734,7 @@ CA
                                 <viewLayoutGuide key="safeArea" id="xua-BC-Adl"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtG-E6-2g3">
-                                <rect key="frame" x="16" y="103" width="65" height="21"/>
+                                <rect key="frame" x="16" y="122" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1802,11 +1823,11 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="Q8S-GW-Hml">
-                                <rect key="frame" x="-7" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="-7" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Submit Request" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAv-Yp-Nv4">
-                                <rect key="frame" x="107" y="10" width="159" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1929,11 +1950,11 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="eel-vD-Vk4">
-                                <rect key="frame" x="-7" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="-7" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post A New Drink" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeW-AG-ISG">
-                                <rect key="frame" x="105" y="11" width="165" height="95"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2107,11 +2128,11 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="dxN-MX-3MZ">
-                                <rect key="frame" x="-7" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="-7" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post A New Food Ingredient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTo-Ih-9Z4">
-                                <rect key="frame" x="44" y="11" width="288" height="95"/>
+                                <rect key="frame" x="46" y="34" width="286" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2268,7 +2289,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm4-FS-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3144.8000000000002" y="348.02955665024632"/>
+            <point key="canvasLocation" x="3077.5999999999999" y="1828.8177339901479"/>
         </scene>
         <!--Donasi Uang-->
         <scene sceneID="KGE-sn-xvQ">
@@ -2279,7 +2300,7 @@ CA
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="9dL-sf-ADq">
-                                <rect key="frame" x="-7" y="0.0" width="388" height="86"/>
+                                <rect key="frame" x="-7" y="0.0" width="390" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEp-gX-MDJ">
@@ -2415,17 +2436,8 @@ CA
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-PI-UJD">
-                                <rect key="frame" x="36" y="640" width="306" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.58039215686274515" green="0.15294117647058825" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Donate Now">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Silahkan kontak ke +62086798765432 untuk Konfirmasi Pembayaran" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AZ4-5y-0ho">
-                                <rect key="frame" x="30" y="576" width="315" height="46"/>
+                                <rect key="frame" x="30" y="589" width="315" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2438,12 +2450,21 @@ CA
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama Komunitas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4s-ig-jSo">
-                                <rect key="frame" x="105" y="41" width="165" height="45"/>
+                                <rect key="frame" x="111" y="34" width="159" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6M-PI-UJD">
+                                <rect key="frame" x="39" y="679" width="306" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58039215686274515" green="0.15294117647058825" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Donate Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="sd7-70-kvS"/>
@@ -2452,6 +2473,78 @@ CA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8e-VW-GYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1500" y="-369"/>
+        </scene>
+        <!--Page2 View Controller-->
+        <scene sceneID="O8u-Tr-uqU">
+            <objects>
+                <viewController storyboardIdentifier="Page2 " id="sAa-4m-LHy" customClass="Page2ViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x8A-Ry-Jla">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image kids 2" translatesAutoresizingMaskIntoConstraints="NO" id="tW0-M1-FEp">
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1av-9v-a6Y">
+                                <rect key="frame" x="64" y="560" width="248" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Let's help them 
+with the food donations 
+you have</string>
+                                <color key="textColor" red="0.66666666669999997" green="0.17254901959999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7L5-Ws-dye"/>
+                    </view>
+                    <connections>
+                        <segue destination="Biu-pR-zCG" kind="presentation" id="fgX-rl-Gyu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Bs-BB-dvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1887" y="799"/>
+        </scene>
+        <!--Page3 View Controller-->
+        <scene sceneID="DlK-Ls-p5C">
+            <objects>
+                <viewController storyboardIdentifier="Page3" id="Biu-pR-zCG" customClass="Page3ViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="USc-oR-KPY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image kids 3" translatesAutoresizingMaskIntoConstraints="NO" id="ONF-5i-NBm">
+                                <rect key="frame" x="-2" y="0.0" width="377" height="496"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Together we can Fight Hunger" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kOS-5m-vBX">
+                                <rect key="frame" x="64" y="560" width="248" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.17254901959999999" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-Af-3nA">
+                                <rect key="frame" x="320" y="695" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="1qZ-rd-dcb" kind="show" id="hDY-g7-tsX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QEG-nN-JOl"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pb8-FP-hCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1177" y="799"/>
         </scene>
     </scenes>
     <resources>
@@ -2469,6 +2562,9 @@ CA
         <image name="icons8-compact-camera-100" width="100" height="100"/>
         <image name="icons8-repository-24" width="24" height="24"/>
         <image name="icons8-xlarge-icons-100" width="100" height="100"/>
+        <image name="image kids 1" width="431" height="627"/>
+        <image name="image kids 2" width="486" height="723"/>
+        <image name="image kids 3" width="741" height="1069"/>
         <image name="isotonic" width="236" height="512"/>
         <image name="milk" width="512" height="512"/>
         <image name="money" width="512" height="512"/>
@@ -2492,6 +2588,5 @@ CA
         <segue reference="vNI-Ee-LR9"/>
         <segue reference="4fT-N8-gD0"/>
         <segue reference="J8g-Du-rWc"/>
-        <segue reference="3xo-YW-wPl"/>
     </inferredMetricsTieBreakers>
 </document>
