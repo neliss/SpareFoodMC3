@@ -363,7 +363,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viW-Rx-CrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="166"/>
+            <point key="canvasLocation" x="-44" y="166"/>
         </scene>
         <!--Profile-->
         <scene sceneID="08n-XV-rfY">
@@ -430,7 +430,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0b-me-Qge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1534" y="1812"/>
+            <point key="canvasLocation" x="-745" y="1813"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5mG-Qd-rHa">
@@ -1137,7 +1137,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOW-dh-wmy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2289" y="1917"/>
+            <point key="canvasLocation" x="2471" y="1917"/>
         </scene>
         <!--Deskripsi Makanan-->
         <scene sceneID="nzT-wq-3d8">
@@ -1870,7 +1870,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iu2-uL-kTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="2641"/>
+            <point key="canvasLocation" x="-44" y="3087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="867-in-Ant">
@@ -2009,7 +2009,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2a-hZ-vdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5999999999999" y="1916.7487684729065"/>
+            <point key="canvasLocation" x="1977" y="2580"/>
         </scene>
         <!--Deskripsi Minuman-->
         <scene sceneID="FGa-Vz-ozD">
@@ -2359,7 +2359,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm4-FS-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3927" y="1917"/>
+            <point key="canvasLocation" x="4439" y="1091"/>
         </scene>
         <!--Donasi Uang-->
         <scene sceneID="KGE-sn-xvQ">
@@ -2651,13 +2651,12 @@ you have</string>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cfl-nr-Ma1"/>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
         <segue reference="dZf-bk-Np0"/>
         <segue reference="frj-MI-Ekw"/>
         <segue reference="k9L-J7-v0q"/>
-        <segue reference="Zfz-Nu-tJm"/>
+        <segue reference="4fT-N8-gD0"/>
         <segue reference="J8g-Du-rWc"/>
     </inferredMetricsTieBreakers>
 </document>
