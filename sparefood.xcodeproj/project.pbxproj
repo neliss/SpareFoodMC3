@@ -13,6 +13,7 @@
 		11B1FF882122A3B600C739A5 /* sparefood.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FF862122A3B600C739A5 /* sparefood.xcdatamodeld */; };
 		11B1FF8A2122A3B800C739A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FF892122A3B800C739A5 /* Assets.xcassets */; };
 		11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FF8B2122A3B800C739A5 /* LaunchScreen.storyboard */; };
+		11B1FF9C212D4B7B00C739A5 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FF9B212D4B7B00C739A5 /* ScrollView.swift */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
 		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
@@ -39,6 +40,7 @@
 		11B1FF892122A3B800C739A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11B1FF8C2122A3B800C739A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11B1FF8E2122A3B800C739A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B1FF9B212D4B7B00C739A5 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
 		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
 		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +128,7 @@
 				9146BB27212ABE2D0018F8AA /* User */,
 				11B1FF812122A3B600C739A5 /* ViewController.swift */,
 				11B1FF7F2122A3B600C739A5 /* AppDelegate.swift */,
+				11B1FF9B212D4B7B00C739A5 /* ScrollView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
 				9146BB5D212B11890018F8AA /* DeskripsiMakanan.swift in Sources */,
 				9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */,
+				11B1FF9C212D4B7B00C739A5 /* ScrollView.swift in Sources */,
 				9146BB5B212B11640018F8AA /* JenisMakanan.swift in Sources */,
 				9146BB59212AC86A0018F8AA /* ChooseUser.swift in Sources */,
 				9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */,
