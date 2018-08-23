@@ -10,6 +10,18 @@ import UIKit
 
 class DeskripsiBahanMakanan: UIViewController {
 
+    @IBOutlet weak var lblTextFieldBahanMakanan: UITextField!
+    
+    @IBOutlet weak var lblTextFieldJumlahDonasi: UITextField!
+    @IBAction func btnJumlahDonasi(_ sender: UIStepper) {
+    }
+    
+    @IBOutlet weak var lblDatePickerExpired: UIDatePicker!
+    
+    @IBOutlet weak var lblDatePickerWaktuPengambilan: UIDatePicker!
+    
+    @IBOutlet weak var lblTextFieldAlamatPengambilan: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
