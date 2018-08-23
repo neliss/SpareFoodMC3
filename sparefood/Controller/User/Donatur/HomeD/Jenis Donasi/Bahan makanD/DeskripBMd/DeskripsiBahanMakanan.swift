@@ -22,6 +22,12 @@ class DeskripsiBahanMakanan: UIViewController {
     
     @IBOutlet weak var lblTextFieldAlamatPengambilan: UITextField!
     
+    @IBOutlet weak var lblBtnGalery: UIButton!
+    @IBOutlet weak var lblTakePhoto: UIButton!
+    @IBOutlet weak var lblImageView: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

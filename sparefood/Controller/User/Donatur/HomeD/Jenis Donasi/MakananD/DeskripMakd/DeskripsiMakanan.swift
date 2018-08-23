@@ -10,6 +10,24 @@ import UIKit
 
 class DeskripsiMakanan: UIViewController {
 
+    @IBOutlet weak var lblTextFieldMakanan: UITextField!
+    
+    @IBOutlet weak var lblTextFieldJumlah: UITextField!
+    @IBAction func btnJumlah(_ sender: UIStepper) {
+    }
+    
+    @IBOutlet weak var btnDatePickerExpired: UIDatePicker!
+    
+    @IBOutlet weak var btnDatePickerPengambilan: UIDatePicker!
+    
+    @IBOutlet weak var lblTextFieldAlamat: UITextField!
+    
+    @IBOutlet weak var lblBtnGalery: UIButton!
+    @IBOutlet weak var lblBtnTakePhoto: UIButton!
+    @IBOutlet weak var lblImageView: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

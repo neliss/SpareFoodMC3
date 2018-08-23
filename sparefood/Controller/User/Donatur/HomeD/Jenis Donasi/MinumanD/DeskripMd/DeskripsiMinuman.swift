@@ -10,6 +10,23 @@ import UIKit
 
 class DeskripsiMinuman: UIViewController {
 
+    @IBOutlet weak var lblTextFieldMinuman: UITextField!
+    
+    @IBOutlet weak var lblTextFieldJumlah: UITextField!
+    @IBAction func btnJumlah(_ sender: UIStepper) {
+    }
+    
+    @IBOutlet weak var lblDatePickerExpired: UIDatePicker!
+    @IBOutlet weak var lblDatePickerPengambilan: UIDatePicker!
+    
+    @IBOutlet weak var lblTextFieldAlamat: UITextField!
+    
+    @IBAction func btnGalery(_ sender: UIButton) {
+    }
+    @IBAction func btnTakePhoto(_ sender: UIButton) {
+    }
+    @IBOutlet weak var lblImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
