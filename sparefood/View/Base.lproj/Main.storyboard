@@ -27,7 +27,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1qZ-rd-dcb" kind="show" id="jMC-iW-whs"/>
+                                    <segue destination="pCz-P1-2GD" kind="show" id="1qK-dU-dN8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-OX-Poc">
@@ -2503,9 +2503,11 @@ you have</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R2o-QW-hYP"/>
+        <segue reference="KXL-dA-xwH"/>
+        <segue reference="dZf-bk-Np0"/>
         <segue reference="frj-MI-Ekw"/>
+        <segue reference="vNI-Ee-LR9"/>
         <segue reference="nxO-dU-dvk"/>
         <segue reference="J8g-Du-rWc"/>
-        <segue reference="3xo-YW-wPl"/>
     </inferredMetricsTieBreakers>
 </document>
