@@ -10,11 +10,14 @@ import UIKit
 
 class RootPageView: UIPageViewController , UIPageViewControllerDataSource{
     
-    Lazy var pageControllerList: [UIViewController] ={
+    lazy var pageControllerList: [UIViewController] = {
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let vc1 = sb.instantiateInitialViewController(withIdentifier: "Page1")
-        let vc2 = sb.instantiateInitialViewController(withIdentifier: "Page2")
-        let vc3 = sb.instantiateInitialViewController(withIdentifier: "Page3")
+        
+        let vc1 = sb.instantiateViewController(withIdentifier: "Page1")
+        let vc2 = sb.instantiateViewController(withIdentifier: "Page2")
+        let vc3 = sb.instantiateViewController(withIdentifier: "Page3")
+                
+        return [vc1,vc2,vc3]
     }()
         
     
