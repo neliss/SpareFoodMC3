@@ -1323,7 +1323,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToE-ap-kGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3145" y="1091"/>
+            <point key="canvasLocation" x="3145" y="1041"/>
         </scene>
         <!--Jenis Bahan Makanan-->
         <scene sceneID="mOF-S7-8gn">
