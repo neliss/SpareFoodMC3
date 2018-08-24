@@ -12,6 +12,16 @@ class Page3ViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(leftSwipe)
+        
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(rightSwipe)
+    
 
         // Do any additional setup after loading the view.
     }

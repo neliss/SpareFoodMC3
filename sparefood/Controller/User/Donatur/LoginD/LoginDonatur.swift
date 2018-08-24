@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Firebase
+import Foundation
 
-class LoginDonatur: UIViewController {
+class LoginDonatur: UIViewController,UITextFieldDelegate,UINavigationControllerDelegate,UIAlertViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
