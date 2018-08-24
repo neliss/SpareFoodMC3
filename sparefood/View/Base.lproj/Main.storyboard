@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1165,6 +1165,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <state key="normal" title="Post">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnPostDonasi:" destination="Mc5-LQ-aBp" eventType="touchUpInside" id="ySZ-8R-AqR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="njL-4Y-b2X">
                                 <rect key="frame" x="46" y="146" width="273" height="30"/>
@@ -1270,6 +1273,9 @@ CA
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="btnGalery:" destination="Mc5-LQ-aBp" eventType="touchUpInside" id="MRe-w9-5Db"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m3C-TI-fGG">
                                 <rect key="frame" x="46" y="610" width="162" height="30"/>
@@ -1284,6 +1290,9 @@ CA
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="btnTakeFoto:" destination="Mc5-LQ-aBp" eventType="touchUpInside" id="QMq-ct-SLo"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OSo-Ky-yZL">
                                 <rect key="frame" x="46" y="412" width="281" height="59"/>
@@ -2170,6 +2179,9 @@ CA
                                 <state key="normal" title="Post">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnPostDonasi:" destination="QNx-OO-t4z" eventType="touchUpInside" id="tU4-xs-4Om"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2215,6 +2227,10 @@ CA
                                 <state key="normal" title="Post">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnPostDonasi:" destination="TBS-tP-84N" eventType="touchUpInside" id="56D-73-pTV"/>
+                                    <action selector="btnPostDonasi:" destination="BXn-b8-Nox" eventType="touchUpInside" id="V38-pE-ez7"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-Qd-IDE">
                                 <rect key="frame" x="34" y="146" width="273" height="30"/>
@@ -2326,6 +2342,9 @@ CA
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="btnGalery:" destination="BXn-b8-Nox" eventType="touchUpInside" id="FFN-eW-mHm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-7H-iVE">
                                 <rect key="frame" x="34" y="610" width="162" height="30"/>
@@ -2340,6 +2359,9 @@ CA
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="btnTakefoto:" destination="BXn-b8-Nox" eventType="touchUpInside" id="Ad5-lg-jIL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2358,8 +2380,9 @@ CA
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm4-FS-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="TBS-tP-84N" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4439" y="1091"/>
+            <point key="canvasLocation" x="3145" y="349"/>
         </scene>
         <!--Donasi Uang-->
         <scene sceneID="KGE-sn-xvQ">
@@ -2653,9 +2676,9 @@ you have</string>
     <inferredMetricsTieBreakers>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
-        <segue reference="dZf-bk-Np0"/>
+        <segue reference="M4O-Ck-MZ4"/>
         <segue reference="frj-MI-Ekw"/>
-        <segue reference="k9L-J7-v0q"/>
+        <segue reference="vNI-Ee-LR9"/>
         <segue reference="4fT-N8-gD0"/>
         <segue reference="J8g-Du-rWc"/>
     </inferredMetricsTieBreakers>
