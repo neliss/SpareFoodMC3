@@ -27,7 +27,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="XSk-PT-W3W" kind="show" id="TGS-1Y-Nmq"/>
+                                    <segue destination="pCz-P1-2GD" kind="show" identifier="kePage1" id="AVH-vX-7vM"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="fmZ-OX-Poc">
@@ -99,18 +99,14 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1zb-jc-OZA"/>
                     </view>
+                    <connections>
+                        <segue destination="sAa-4m-LHy" kind="show" identifier="swipeLeft" id="xXc-Jr-22d"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="swipeRight" id="vaN-H9-Laj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QF2-JN-LDd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2594.4000000000001" y="798.76847290640399"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="g3b-bT-OMT">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="XSk-PT-W3W" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fK8-lx-xZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3340" y="799"/>
         </scene>
         <!--Choose User-->
         <scene sceneID="BVj-dp-j0P">
@@ -184,6 +180,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <outlet property="lblBtnKomunitas" destination="DQB-Hi-7nF" id="AVb-qu-aaF"/>
                         <segue destination="rnf-9h-vRQ" kind="show" identifier="keDonatur" id="BZy-JE-BDM"/>
                         <segue destination="GoC-F0-1da" kind="show" identifier="kePenerima" id="mYF-Zg-dDw"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="keAwal" id="2Qg-cT-ig5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk3-zb-qnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2204,7 +2201,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trq-Kr-m2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3188" y="1925"/>
+            <point key="canvasLocation" x="3145" y="1917"/>
         </scene>
         <!--Deskripsi Bahan Makanan-->
         <scene sceneID="bIO-2k-ZUh">
@@ -2599,10 +2596,14 @@ you have</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7L5-Ws-dye"/>
                     </view>
+                    <connections>
+                        <segue destination="Biu-pR-zCG" kind="show" identifier="swipeLeft" id="aIN-qF-7iw"/>
+                        <segue destination="pCz-P1-2GD" kind="show" identifier="swipeRight" id="JAQ-ad-iRb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bs-BB-dvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1887" y="799"/>
+            <point key="canvasLocation" x="-2594" y="1516"/>
         </scene>
         <!--Page3 View Controller-->
         <scene sceneID="DlK-Ls-p5C">
@@ -2624,22 +2625,18 @@ you have</string>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVg-Af-3nA">
-                                <rect key="frame" x="320" y="695" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="1qZ-rd-dcb" kind="show" id="hDY-g7-tsX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QEG-nN-JOl"/>
                     </view>
+                    <connections>
+                        <segue destination="sAa-4m-LHy" kind="show" identifier="swipeRight" id="wlY-Hy-yjx"/>
+                        <segue destination="1qZ-rd-dcb" kind="show" identifier="swipeLeft" id="hCa-eV-PWU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pb8-FP-hCA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1177" y="799"/>
+            <point key="canvasLocation" x="-2594" y="2304"/>
         </scene>
     </scenes>
     <resources>
@@ -2676,12 +2673,16 @@ you have</string>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2sU-K6-yn5"/>
+        <segue reference="wlY-Hy-yjx"/>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
         <segue reference="M4O-Ck-MZ4"/>
         <segue reference="frj-MI-Ekw"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="nxO-dU-dvk"/>
+        <segue reference="4fT-N8-gD0"/>
         <segue reference="J8g-Du-rWc"/>
+        <segue reference="JAQ-ad-iRb"/>
+        <segue reference="vaN-H9-Laj"/>
     </inferredMetricsTieBreakers>
 </document>
