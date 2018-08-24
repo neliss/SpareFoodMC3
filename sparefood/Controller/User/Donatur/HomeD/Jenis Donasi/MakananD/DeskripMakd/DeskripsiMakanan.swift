@@ -10,6 +10,10 @@ import UIKit
 
 class DeskripsiMakanan: UIViewController, UIImagePickerControllerDelegate,UINavigationControllerDelegate{
 
+    
+   
+    @IBOutlet weak var lblDonasi: UILabel!
+    
     @IBOutlet weak var lblTextFieldMakanan: UITextField!
     
     @IBOutlet weak var lblTextFieldJumlah: UITextField!
