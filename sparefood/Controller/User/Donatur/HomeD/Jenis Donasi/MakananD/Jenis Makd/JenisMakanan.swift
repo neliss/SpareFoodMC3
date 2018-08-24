@@ -12,18 +12,25 @@ class JenisMakanan: UIViewController {
 
     @IBOutlet weak var lblBtnMakananKering: UIButton!
     @IBAction func btnMakananKering(_ sender: UIButton) {
+        performSegue(withIdentifier: "keDeskripsiMakanan", sender: self)
     }
     
     @IBOutlet weak var lblBtnMakananBasah: UIButton!
     @IBAction func btnMakananBasah(_ sender: UIButton) {
+        performSegue(withIdentifier: "keDeskripsiMakanan", sender: self)
+
     }
     
     @IBOutlet weak var lblBtnMakananJadi: UIButton!
     @IBAction func btnMakananJadi(_ sender: UIButton) {
+        performSegue(withIdentifier: "keDeskripsiMakanan", sender: self)
+
     }
     
     @IBOutlet weak var lblBtnBuah: UIButton!
     @IBAction func btnBuah(_ sender: UIButton) {
+        performSegue(withIdentifier: "keDeskripsiMakanan", sender: self)
+
     }
     
     

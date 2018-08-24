@@ -451,7 +451,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="io7-TZ-80u">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="io7-TZ-80u">
                                 <rect key="frame" x="0.0" y="115" width="375" height="663"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -977,7 +977,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <outlet property="lblBtnMakananJadi" destination="aSf-Tu-sD5" id="Hbm-Q3-om1"/>
                         <outlet property="lblBtnMakananKering" destination="J5o-d4-wB5" id="a8k-YG-fZi"/>
                         <segue destination="Z2L-0L-HEj" kind="show" identifier="swipeRight" id="7lj-Nq-SFg"/>
-                        <segue destination="Mc5-LQ-aBp" kind="show" id="sRY-de-FAz"/>
+                        <segue destination="Mc5-LQ-aBp" kind="show" identifier="keDeskripsiMakanan" id="sRY-de-FAz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDT-xK-bUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1310,10 +1310,12 @@ CA
                         <outlet property="btnDatePickerPengambilan" destination="OSo-Ky-yZL" id="UOg-Qc-RtN"/>
                         <outlet property="lblBtnGalery" destination="qXi-g0-rkw" id="W9B-ek-FlP"/>
                         <outlet property="lblBtnTakePhoto" destination="m3C-TI-fGG" id="haC-PU-b7I"/>
+                        <outlet property="lblDonasi" destination="azr-8S-9Fk" id="lwO-GA-nZR"/>
                         <outlet property="lblImageView" destination="yk9-dQ-Fx5" id="p80-WL-doT"/>
                         <outlet property="lblTextFieldAlamat" destination="8HN-ub-e5N" id="Eug-nF-H5D"/>
                         <outlet property="lblTextFieldJumlah" destination="fJd-Th-nz1" id="iQF-CI-izD"/>
                         <outlet property="lblTextFieldMakanan" destination="njL-4Y-b2X" id="g7e-FJ-Fmg"/>
+                        <outlet property="lbljenisdonasi" destination="azr-8S-9Fk" id="724-9A-gRp"/>
                         <segue destination="J1m-FE-npp" kind="show" identifier="swipeRight" id="vNI-Ee-LR9"/>
                     </connections>
                 </viewController>
@@ -2679,7 +2681,7 @@ you have</string>
         <segue reference="M4O-Ck-MZ4"/>
         <segue reference="frj-MI-Ekw"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="4fT-N8-gD0"/>
+        <segue reference="7lj-Nq-SFg"/>
         <segue reference="J8g-Du-rWc"/>
     </inferredMetricsTieBreakers>
 </document>
