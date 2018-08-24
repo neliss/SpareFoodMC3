@@ -2594,9 +2594,6 @@ you have</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7L5-Ws-dye"/>
                     </view>
-                    <connections>
-                        <segue destination="Biu-pR-zCG" kind="presentation" id="fgX-rl-Gyu"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Bs-BB-dvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2679,7 +2676,7 @@ you have</string>
         <segue reference="M4O-Ck-MZ4"/>
         <segue reference="frj-MI-Ekw"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="4fT-N8-gD0"/>
+        <segue reference="nxO-dU-dvk"/>
         <segue reference="J8g-Du-rWc"/>
     </inferredMetricsTieBreakers>
 </document>

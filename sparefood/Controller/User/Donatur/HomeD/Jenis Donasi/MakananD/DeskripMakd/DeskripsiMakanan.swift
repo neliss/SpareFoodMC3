@@ -66,8 +66,7 @@ class DeskripsiMakanan: UIViewController, UIImagePickerControllerDelegate,UINavi
         self.view.addGestureRecognizer(rightSwipe)
     }
 
-    @IBAction func btnPostDonasi(_ sender: UIButton) {
-    }
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
