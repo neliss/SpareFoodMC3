@@ -180,7 +180,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <outlet property="lblBtnKomunitas" destination="DQB-Hi-7nF" id="AVb-qu-aaF"/>
                         <segue destination="rnf-9h-vRQ" kind="show" identifier="keDonatur" id="BZy-JE-BDM"/>
                         <segue destination="GoC-F0-1da" kind="show" identifier="kePenerima" id="mYF-Zg-dDw"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="keAwal" id="2Qg-cT-ig5"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="swipeRight" id="2Qg-cT-ig5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bk3-zb-qnU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2673,8 +2673,7 @@ you have</string>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2sU-K6-yn5"/>
-        <segue reference="wlY-Hy-yjx"/>
+        <segue reference="xXc-Jr-22d"/>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
         <segue reference="M4O-Ck-MZ4"/>
