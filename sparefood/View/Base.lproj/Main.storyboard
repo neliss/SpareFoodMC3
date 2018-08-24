@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1314,6 +1314,7 @@ CA
                         <outlet property="btnDatePickerPengambilan" destination="OSo-Ky-yZL" id="UOg-Qc-RtN"/>
                         <outlet property="lblBtnGalery" destination="qXi-g0-rkw" id="W9B-ek-FlP"/>
                         <outlet property="lblBtnTakePhoto" destination="m3C-TI-fGG" id="haC-PU-b7I"/>
+                        <outlet property="lblDonasi" destination="azr-8S-9Fk" id="9m7-ut-kM9"/>
                         <outlet property="lblImageView" destination="yk9-dQ-Fx5" id="p80-WL-doT"/>
                         <outlet property="lblTextFieldAlamat" destination="8HN-ub-e5N" id="Eug-nF-H5D"/>
                         <outlet property="lblTextFieldJumlah" destination="fJd-Th-nz1" id="iQF-CI-izD"/>
