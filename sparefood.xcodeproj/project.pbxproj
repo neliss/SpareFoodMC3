@@ -24,6 +24,7 @@
 		9141DE982133F41400E49512 /* RequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE972133F41400E49512 /* RequestD.swift */; };
 		9141DE9B2133F5D900E49512 /* CellRequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9A2133F5D900E49512 /* CellRequestD.swift */; };
 		9141DE9D2134003400E49512 /* ListDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9C2134003400E49512 /* ListDonation.swift */; };
+		9141DE9F213401E800E49512 /* PickUpDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9E213401E800E49512 /* PickUpDonation.swift */; };
 		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
 		9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */; };
 		9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4D212AC5130018F8AA /* RegisDonatur.swift */; };
@@ -64,6 +65,7 @@
 		9141DE972133F41400E49512 /* RequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestD.swift; sourceTree = "<group>"; };
 		9141DE9A2133F5D900E49512 /* CellRequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRequestD.swift; sourceTree = "<group>"; };
 		9141DE9C2134003400E49512 /* ListDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDonation.swift; sourceTree = "<group>"; };
+		9141DE9E213401E800E49512 /* PickUpDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpDonation.swift; sourceTree = "<group>"; };
 		9146BB47212AC45B0018F8AA /* HomeDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDonatur.swift; sourceTree = "<group>"; };
 		9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKomunitas.swift; sourceTree = "<group>"; };
 		9146BB4D212AC5130018F8AA /* RegisDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisDonatur.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 			children = (
 				9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */,
 				9141DE9C2134003400E49512 /* ListDonation.swift */,
+				9141DE9E213401E800E49512 /* PickUpDonation.swift */,
 			);
 			path = HomeK;
 			sourceTree = "<group>";
@@ -551,6 +554,7 @@
 				9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */,
 				11B1FFA0212E8B2100C739A5 /* ScollViewController.swift in Sources */,
 				9141DE982133F41400E49512 /* RequestD.swift in Sources */,
+				9141DE9F213401E800E49512 /* PickUpDonation.swift in Sources */,
 				9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */,
 				9141DE9B2133F5D900E49512 /* CellRequestD.swift in Sources */,
 				11B1FFA4212E945100C739A5 /* Page2ViewController.swift in Sources */,
