@@ -54,6 +54,24 @@ class CollectionViewKomunitas: UIViewController,UICollectionViewDelegate,UIColle
         return cell
     }
     
-    func
-
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.red.cgColor
+        cell?.layer.borderWidth = 2
+        
+        
+        func collectionView(_ collectionView: UICollectionView, didSelectItemAt: IndexPath){
+            let mainStoryboard:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let pc = mainStoryboard.instantiateInitialViewController(withIdentifier: "ProfileKomunitasD") as! ProfileKomunitasD
+            self.navigationController?.pushViewController(pc, animated: true)
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+         let cell = collectionView.cellForItem(at: indexPath)
+        cell?.layer.borderColor = UIColor.lightGray.cgColor
+        cell?.layer.borderWidth = 0,5
+    }
+    
+    
+    
 }
