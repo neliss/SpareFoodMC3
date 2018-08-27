@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController , UIScrollViewDelegate{
 
@@ -21,7 +22,12 @@ class ViewController: UIViewController , UIScrollViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func nextHandler(_ sender: Any) {
+//        if let user = Auth.auth().currentUser {
+//            performSegue(withIdentifier: "SelectToMenu", sender: sender)
+//        }
+    }
+    
 
 }
 

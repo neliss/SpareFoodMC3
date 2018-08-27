@@ -19,6 +19,7 @@
 		11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFA5212E948800C739A5 /* Page3ViewController.swift */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
+		2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9B16321328A8D00365A21 /* ProfileViewController.swift */; };
 		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
 		9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */; };
 		9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4D212AC5130018F8AA /* RegisDonatur.swift */; };
@@ -49,6 +50,7 @@
 		11B1FFA3212E945100C739A5 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		11B1FFA5212E948800C739A5 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2FF9B16321328A8D00365A21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
 		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9146BB47212AC45B0018F8AA /* HomeDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDonatur.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			children = (
 				9146BB29212ABE450018F8AA /* Donatur */,
 				9146BB28212ABE3E0018F8AA /* Komunitas */,
+				2FF9B16321328A8D00365A21 /* ProfileViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -562,14 +565,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sparefood/Pods-sparefood-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -609,6 +612,7 @@
 				11B1FF802122A3B600C739A5 /* AppDelegate.swift in Sources */,
 				9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */,
 				9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */,
+				2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */,
 				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
 				9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */,
 				11B1FFA0212E8B2100C739A5 /* ScollViewController.swift in Sources */,
