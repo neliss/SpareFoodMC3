@@ -563,7 +563,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellRequestD" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="140" id="bH9-yS-Bdt" customClass="CellRequestD" customModule="sparefood" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bH9-yS-Bdt" id="bge-to-xIz">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bH9-yS-Bdt" id="bge-to-xIz" customClass="CellRequestD" customModule="sparefood" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="343" height="139.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -1198,7 +1198,6 @@ CA
         <!--List Komunitas View Controller-->
         <scene sceneID="f0u-HD-AsU">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bHD-eS-Txn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="GE7-0J-XXW" customClass="ListKomunitasViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HHV-71-J08">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
@@ -1245,6 +1244,7 @@ CA
                         <segue destination="B1N-kV-GU9" kind="show" id="cs0-Yv-4Mc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHD-eS-Txn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4008.8000000000002" y="1090.6403940886701"/>
         </scene>
@@ -2615,6 +2615,7 @@ you have</string>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="yoy-IO-Zym"/>
         <segue reference="xXc-Jr-22d"/>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
@@ -2622,7 +2623,7 @@ you have</string>
         <segue reference="dZf-bk-Np0"/>
         <segue reference="frj-MI-Ekw"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="4fT-N8-gD0"/>
+        <segue reference="nxO-dU-dvk"/>
         <segue reference="J8g-Du-rWc"/>
         <segue reference="JAQ-ad-iRb"/>
         <segue reference="vaN-H9-Laj"/>
