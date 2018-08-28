@@ -1,5 +1,5 @@
 //
-//  ChooseUser.swift
+//  JenisMinuman.swift
 //  sparefood
 //
 //  Created by muhammad sutrisno on 20/08/18.
@@ -8,32 +8,35 @@
 
 import UIKit
 
-class ChooseUser: UIViewController {
+class JenisMinuman: UIViewController {
 
-    
-    @IBOutlet weak var lblBtnDonatur: UIButton!
-    
-    @IBOutlet weak var lblBtnKomunitas: UIButton!
-    
-    @IBAction func btnDonatur(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "keDonatur", sender: self)
+    @IBOutlet weak var lblBtnSusu: UIButton!
+    @IBAction func btnSusu(_ sender: UIButton) {
     }
     
-    @IBAction func btnKomunitas(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
-        performSegue(withIdentifier: "keKomunitas", sender: self)
+    @IBOutlet weak var lblBtnAirMineral: UIButton!
+    @IBAction func btnAirMineral(_ sender: UIButton) {
     }
+    
+    @IBOutlet weak var lblBtnTeh: UIButton!
+    @IBAction func btnTeh(_ sender: UIButton) {
+    }
+    
+    @IBOutlet weak var lblBtnIsotonic: UIButton!
+    @IBAction func btnIsotonic(_ sender: UIButton) {
+    }
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(swipeAction(swipe:)))
-        leftSwipe.direction = UISwipeGestureRecognizerDirection.left
-        self.view.addGestureRecognizer(leftSwipe)
         
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action:#selector(swipeAction(swipe:)))
+        
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.right
+        self.view.addGestureRecognizer(rightSwipe)
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,7 +44,6 @@ class ChooseUser: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -53,3 +55,5 @@ class ChooseUser: UIViewController {
     */
 
 }
+
+

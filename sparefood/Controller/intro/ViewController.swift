@@ -31,3 +31,18 @@ class ViewController: UIViewController , UIScrollViewDelegate{
 
 }
 
+extension UIViewController{
+    @objc func swipeAction(swipe: UISwipeGestureRecognizer){
+        switch swipe.direction.rawValue {
+        case  1:
+            self.dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "swipeRight", sender: self)
+        case  2:
+            self.dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "swipeLeft", sender: self)
+        default:
+            break
+        }
+    }
+}
+
