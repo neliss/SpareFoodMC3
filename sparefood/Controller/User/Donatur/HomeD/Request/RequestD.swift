@@ -2,23 +2,18 @@
 //  RequestD.swift
 //  sparefood
 //
-//  Created by muhammad sutrisno on 27/08/18.
+//  Created by muhammad sutrisno on 28/08/18.
 //  Copyright © 2018 Nelis Lasta. All rights reserved.
 //
 
 import UIKit
 
-class RequestD: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RequestD: UIViewController {
 
-    @IBOutlet weak var lblTablewViewRequest: UITableView!
     
-    
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblTablewViewRequest.delegate = self
-        lblTablewViewRequest.dataSource = self
-        
 
         // Do any additional setup after loading the view.
     }

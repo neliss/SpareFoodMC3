@@ -21,21 +21,11 @@
 		11B1FFE62133C4F600C739A5 /* CollectionViewKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-		2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9B16321328A8D00365A21 /* ProfileViewController.swift */; };
-=======
 		9141DE982133F41400E49512 /* RequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE972133F41400E49512 /* RequestD.swift */; };
-		9141DE9B2133F5D900E49512 /* CellRequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9A2133F5D900E49512 /* CellRequestD.swift */; };
 		9141DE9D2134003400E49512 /* ListDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9C2134003400E49512 /* ListDonation.swift */; };
 		9141DE9F213401E800E49512 /* PickUpDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DE9E213401E800E49512 /* PickUpDonation.swift */; };
->>>>>>> 778088420225eb07413fb03cd19892f7e4fb0740
-=======
-		2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9B16321328A8D00365A21 /* ProfileViewController.swift */; };
-		9141DEA721351AD300E49512 /* ProfileKomuitasD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */; };
-		9141DEAB21351D8800E49512 /* RequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEAA21351D8800E49512 /* RequestD.swift */; };
-		9141DEAD21351E0F00E49512 /* CellRequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEAC21351E0F00E49512 /* CellRequestD.swift */; };
->>>>>>> 36e746dddf11cc348d33d41ae4f4baf62f065115
+		9141DEA221340AE500E49512 /* CellRD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEA121340AE500E49512 /* CellRD.swift */; };
+		9141DEA42134107200E49512 /* CellListDonation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEA32134107200E49512 /* CellListDonation.swift */; };
 		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
 		9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */; };
 		9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4D212AC5130018F8AA /* RegisDonatur.swift */; };
@@ -50,6 +40,9 @@
 		9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */; };
 		9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */; };
 		9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB68212C110E0018F8AA /* DonasiUang.swift */; };
+		9146BB7121339CF10018F8AA /* ListKomunitasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB7021339CF10018F8AA /* ListKomunitasViewController.swift */; };
+		9146BB7321339D300018F8AA /* CellListDonasi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB7221339D300018F8AA /* CellListDonasi.swift */; };
+		9146BB7521339F0F0018F8AA /* ProfileKomunitasD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB7421339F0F0018F8AA /* ProfileKomunitasD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,9 +64,11 @@
 		2FF9B16321328A8D00365A21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
 		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileKomuitasD.swift; sourceTree = "<group>"; };
-		9141DEAA21351D8800E49512 /* RequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestD.swift; sourceTree = "<group>"; };
-		9141DEAC21351E0F00E49512 /* CellRequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRequestD.swift; sourceTree = "<group>"; };
+		9141DE972133F41400E49512 /* RequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestD.swift; sourceTree = "<group>"; };
+		9141DE9C2134003400E49512 /* ListDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDonation.swift; sourceTree = "<group>"; };
+		9141DE9E213401E800E49512 /* PickUpDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickUpDonation.swift; sourceTree = "<group>"; };
+		9141DEA121340AE500E49512 /* CellRD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRD.swift; sourceTree = "<group>"; };
+		9141DEA32134107200E49512 /* CellListDonation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellListDonation.swift; sourceTree = "<group>"; };
 		9146BB47212AC45B0018F8AA /* HomeDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDonatur.swift; sourceTree = "<group>"; };
 		9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKomunitas.swift; sourceTree = "<group>"; };
 		9146BB4D212AC5130018F8AA /* RegisDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisDonatur.swift; sourceTree = "<group>"; };
@@ -88,6 +83,9 @@
 		9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenisBahanMakanan.swift; sourceTree = "<group>"; };
 		9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskripsiBahanMakanan.swift; sourceTree = "<group>"; };
 		9146BB68212C110E0018F8AA /* DonasiUang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonasiUang.swift; sourceTree = "<group>"; };
+		9146BB7021339CF10018F8AA /* ListKomunitasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListKomunitasViewController.swift; sourceTree = "<group>"; };
+		9146BB7221339D300018F8AA /* CellListDonasi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellListDonasi.swift; sourceTree = "<group>"; };
+		9146BB7421339F0F0018F8AA /* ProfileKomunitasD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileKomunitasD.swift; path = "sparefood/Controller/User/Komunitas/List Komunitas/ProfileKomunitasD.swift"; sourceTree = SOURCE_ROOT; };
 		D2FB9F7729147D5291FE13AF /* Pods-sparefood.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,29 +162,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		9141DEA521351AAD00E49512 /* profile */ = {
+		9141DE962133F3FB00E49512 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				2FF9B16321328A8D00365A21 /* ProfileViewController.swift */,
-				9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */,
-			);
-			path = profile;
-			sourceTree = "<group>";
-		};
-		9141DEA921351D6B00E49512 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				9141DEAA21351D8800E49512 /* RequestD.swift */,
-				9141DEAC21351E0F00E49512 /* CellRequestD.swift */,
+				9141DE972133F41400E49512 /* RequestD.swift */,
+				9141DEA121340AE500E49512 /* CellRD.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		9141DE992133F54E00E49512 /* List Komunitas collection view */ = {
+			isa = PBXGroup;
+			children = (
+				11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */,
+				11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */,
+			);
+			name = "List Komunitas collection view";
+			path = "../../List Komunitas collection view";
 			sourceTree = "<group>";
 		};
 		9146BB23212AB9820018F8AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */,
-				11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */,
 				11B1FFA7212E9AA800C739A5 /* intro */,
 				9146BB57212AC8530018F8AA /* Choose */,
 				9146BB27212ABE2D0018F8AA /* User */,
@@ -207,6 +204,9 @@
 			isa = PBXGroup;
 			children = (
 				9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */,
+				9141DE9C2134003400E49512 /* ListDonation.swift */,
+				9141DE9E213401E800E49512 /* PickUpDonation.swift */,
+				9141DEA32134107200E49512 /* CellListDonation.swift */,
 			);
 			path = HomeK;
 			sourceTree = "<group>";
@@ -216,6 +216,7 @@
 			children = (
 				9146BB29212ABE450018F8AA /* Donatur */,
 				9146BB28212ABE3E0018F8AA /* Komunitas */,
+				2FF9B16321328A8D00365A21 /* ProfileViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -223,9 +224,12 @@
 		9146BB28212ABE3E0018F8AA /* Komunitas */ = {
 			isa = PBXGroup;
 			children = (
-				9141DEA521351AAD00E49512 /* profile */,
+				9146BB6F21339CC00018F8AA /* List Komunitas table view */,
+				9141DE992133F54E00E49512 /* List Komunitas collection view */,
 				9146BB51212AC5780018F8AA /* RegisK */,
 				9146BB52212AC5800018F8AA /* LoginK */,
+				9146BB2E212ABF460018F8AA /* RequestK */,
+				9146BB2C212ABEB00018F8AA /* ProfileK */,
 				9146BB25212ABDF80018F8AA /* HomeK */,
 			);
 			path = Komunitas;
@@ -234,8 +238,10 @@
 		9146BB29212ABE450018F8AA /* Donatur */ = {
 			isa = PBXGroup;
 			children = (
+				9141DE962133F3FB00E49512 /* Request */,
 				9146BB4C212AC4E30018F8AA /* RegisD */,
 				9146BB4B212AC4CE0018F8AA /* LoginD */,
+				9146BB2B212ABE9B0018F8AA /* ProfileD */,
 				9146BB2A212ABE930018F8AA /* HomeD */,
 			);
 			path = Donatur;
@@ -244,22 +250,35 @@
 		9146BB2A212ABE930018F8AA /* HomeD */ = {
 			isa = PBXGroup;
 			children = (
-				9141DEA921351D6B00E49512 /* Request */,
 				9146BB47212AC45B0018F8AA /* HomeDonatur.swift */,
-				9146BB2F212ABF920018F8AA /* Jenis Donasi */,
-			);
-			path = HomeD;
-			sourceTree = "<group>";
-		};
-		9146BB2F212ABF920018F8AA /* Jenis Donasi */ = {
-			isa = PBXGroup;
-			children = (
 				9146BB30212ABFA90018F8AA /* MakananD */,
 				9146BB31212ABFB30018F8AA /* MinumanD */,
 				9146BB32212ABFC30018F8AA /* Bahan makanD */,
 				9146BB33212ABFD70018F8AA /* UangD */,
 			);
-			path = "Jenis Donasi";
+			path = HomeD;
+			sourceTree = "<group>";
+		};
+		9146BB2B212ABE9B0018F8AA /* ProfileD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProfileD;
+			sourceTree = "<group>";
+		};
+		9146BB2C212ABEB00018F8AA /* ProfileK */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB7421339F0F0018F8AA /* ProfileKomunitasD.swift */,
+			);
+			path = ProfileK;
+			sourceTree = "<group>";
+		};
+		9146BB2E212ABF460018F8AA /* RequestK */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestK;
 			sourceTree = "<group>";
 		};
 		9146BB30212ABFA90018F8AA /* MakananD */ = {
@@ -335,6 +354,15 @@
 				9146BB58212AC86A0018F8AA /* ChooseUser.swift */,
 			);
 			path = Choose;
+			sourceTree = "<group>";
+		};
+		9146BB6F21339CC00018F8AA /* List Komunitas table view */ = {
+			isa = PBXGroup;
+			children = (
+				9146BB7021339CF10018F8AA /* ListKomunitasViewController.swift */,
+				9146BB7221339D300018F8AA /* CellListDonasi.swift */,
+			);
+			path = "List Komunitas table view";
 			sourceTree = "<group>";
 		};
 		F323F8DF11D49687F3997F87 /* Frameworks */ = {
@@ -424,32 +452,22 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-sparefood/Pods-sparefood-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 <<<<<<< HEAD
-<<<<<<< HEAD
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 =======
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 >>>>>>> 778088420225eb07413fb03cd19892f7e4fb0740
-=======
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
->>>>>>> 36e746dddf11cc348d33d41ae4f4baf62f065115
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 <<<<<<< HEAD
-<<<<<<< HEAD
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 =======
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 >>>>>>> 778088420225eb07413fb03cd19892f7e4fb0740
-=======
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
->>>>>>> 36e746dddf11cc348d33d41ae4f4baf62f065115
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,28 +502,33 @@
 			files = (
 				11B1FF822122A3B600C739A5 /* ViewController.swift in Sources */,
 				9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */,
+				9146BB7521339F0F0018F8AA /* ProfileKomunitasD.swift in Sources */,
+				9146BB7121339CF10018F8AA /* ListKomunitasViewController.swift in Sources */,
 				9146BB5F212B11A10018F8AA /* JenisMinuman.swift in Sources */,
 				11B1FF802122A3B600C739A5 /* AppDelegate.swift in Sources */,
 				9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */,
+				9141DEA221340AE500E49512 /* CellRD.swift in Sources */,
 				11B1FFE42133C09100C739A5 /* CollectionViewCell.swift in Sources */,
-				9141DEAD21351E0F00E49512 /* CellRequestD.swift in Sources */,
-				9141DEAB21351D8800E49512 /* RequestD.swift in Sources */,
 				9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */,
 				2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */,
 				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
 				9146BB69212C110E0018F8AA /* DonasiUang.swift in Sources */,
 				11B1FFA0212E8B2100C739A5 /* ScollViewController.swift in Sources */,
+				9141DE982133F41400E49512 /* RequestD.swift in Sources */,
+				9141DE9F213401E800E49512 /* PickUpDonation.swift in Sources */,
 				9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */,
 				11B1FFA4212E945100C739A5 /* Page2ViewController.swift in Sources */,
 				9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */,
-				9141DEA721351AD300E49512 /* ProfileKomuitasD.swift in Sources */,
 				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
 				11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */,
 				11B1FFA2212E91F200C739A5 /* RootPageView.swift in Sources */,
 				9146BB5D212B11890018F8AA /* DeskripsiMakanan.swift in Sources */,
+				9141DEA42134107200E49512 /* CellListDonation.swift in Sources */,
 				11B1FFE62133C4F600C739A5 /* CollectionViewKomunitas.swift in Sources */,
 				9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */,
 				9146BB5B212B11640018F8AA /* JenisMakanan.swift in Sources */,
+				9141DE9D2134003400E49512 /* ListDonation.swift in Sources */,
+				9146BB7321339D300018F8AA /* CellListDonasi.swift in Sources */,
 				9146BB59212AC86A0018F8AA /* ChooseUser.swift in Sources */,
 				9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */,
 				11B1FF882122A3B600C739A5 /* sparefood.xcdatamodeld in Sources */,

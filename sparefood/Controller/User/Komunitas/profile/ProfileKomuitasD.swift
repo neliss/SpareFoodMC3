@@ -1,24 +1,29 @@
 //
-//  RequestD.swift
+//  ProfileKomuitasD.swift
 //  sparefood
 //
-//  Created by muhammad sutrisno on 27/08/18.
+//  Created by muhammad sutrisno on 28/08/18.
 //  Copyright © 2018 Nelis Lasta. All rights reserved.
 //
 
 import UIKit
 
-class RequestD: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ProfileKomuitasD: UIViewController {
 
-    @IBOutlet weak var lblTablewViewRequest: UITableView!
     
+    @IBOutlet weak var lblEmail : UILabel!
+    @IBOutlet weak var lblNomorTelphone : UILabel!
+    @IBOutlet weak var lblAlamat : UITextView!
     
+    @IBOutlet weak var lblImageView : UIImageView!
+    
+
+    @IBAction func btnDonasi(_ sender: UIButton) {
+//        push ke fire base
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        lblTablewViewRequest.delegate = self
-        lblTablewViewRequest.dataSource = self
-        
 
         // Do any additional setup after loading the view.
     }
