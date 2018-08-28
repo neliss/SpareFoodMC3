@@ -1266,7 +1266,6 @@ CA
                         <outlet property="lblTextFieldJumlah" destination="fJd-Th-nz1" id="iQF-CI-izD"/>
                         <outlet property="lblTextFieldMakanan" destination="njL-4Y-b2X" id="g7e-FJ-Fmg"/>
                         <segue destination="J1m-FE-npp" kind="show" identifier="swipeRight" id="vNI-Ee-LR9"/>
-                        <segue destination="yxB-c9-EyV" kind="show" id="7FE-wX-MT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToE-ap-kGm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1323,7 +1322,7 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHD-eS-Txn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4014" y="1963"/>
+            <point key="canvasLocation" x="3950" y="1917"/>
         </scene>
         <!--Jenis Bahan Makanan-->
         <scene sceneID="mOF-S7-8gn">
@@ -2019,12 +2018,12 @@ CA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2a-hZ-vdE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5044" y="887"/>
+            <point key="canvasLocation" x="4937" y="1091"/>
         </scene>
-        <!--Collection View Komunitas-->
+        <!--Community View Controller-->
         <scene sceneID="boI-VD-FOH">
             <objects>
-                <viewController id="yxB-c9-EyV" customClass="CollectionViewKomunitas" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yxB-c9-EyV" customClass="CommunityViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="06X-CL-t31">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2043,7 +2042,7 @@ CA
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="upw-t2-v8V">
                                 <rect key="frame" x="0.0" y="135" width="375" height="632"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Oj-oO-MyZ">
                                     <size key="itemSize" width="177" height="224"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -2071,25 +2070,30 @@ CA
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="communityImage" destination="QBQ-UO-SbN" id="JAo-Oa-Leb"/>
                                             <outlet property="communityImageView" destination="QBQ-UO-SbN" id="kS4-Sc-9rd"/>
                                             <outlet property="communityLabel" destination="hdz-xK-Tpi" id="n7T-ov-GOe"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="yxB-c9-EyV" id="EdQ-Km-lYi"/>
+                                    <outlet property="delegate" destination="yxB-c9-EyV" id="Sm6-HI-3HH"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WA7-UI-Nwr"/>
                     </view>
                     <connections>
-                        <outlet property="collectionView" destination="upw-t2-v8V" id="CdS-M4-NDm"/>
-                        <segue destination="B1N-kV-GU9" kind="show" id="cRi-P6-NJs"/>
+                        <outlet property="collectionView" destination="upw-t2-v8V" id="xRY-5V-qub"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3YE-Gi-MDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4165.6000000000004" y="887.4384236453202"/>
+            <point key="canvasLocation" x="4146" y="1091"/>
         </scene>
         <!--Deskripsi Minuman-->
         <scene sceneID="FGa-Vz-ozD">
@@ -2266,7 +2270,6 @@ CA
                         <outlet property="lblTextFieldJumlah" destination="eba-7c-ltK" id="K7r-Vx-ExY"/>
                         <outlet property="lblTextFieldMinuman" destination="ghD-MI-F9f" id="S8M-kp-gSe"/>
                         <segue destination="Ony-AV-cy6" kind="show" identifier="swipeRight" id="M4O-Ck-MZ4"/>
-                        <segue destination="yxB-c9-EyV" kind="show" id="Ght-td-y0R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Trq-Kr-m2e" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2449,7 +2452,6 @@ CA
                         <outlet property="lblTextFieldBahanMakanan" destination="Bxe-je-v0R" id="bD6-wD-S8d"/>
                         <outlet property="lblTextFieldJumlahDonasi" destination="Bxe-je-v0R" id="7sZ-Hr-SoF"/>
                         <segue destination="snv-tW-mJn" kind="show" identifier="swipeRight" id="KXL-dA-xwH"/>
-                        <segue destination="yxB-c9-EyV" kind="show" id="CoQ-kK-fWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bm4-FS-cfw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2714,6 +2716,7 @@ you have</string>
         <image name="1185a31e-1e70-45c7-999c-accd98afc567" width="200" height="200"/>
         <image name="Screen Shot 2018-08-15 at 15.43.44" width="654" height="1422"/>
         <image name="apple" width="512" height="512"/>
+        <image name="avatar-1" width="24" height="24"/>
         <image name="chips" width="512" height="512"/>
         <image name="donation" width="512" height="512"/>
         <image name="eff9875b-6da8-465e-a4b4-9673c613c1e9" width="200" height="200"/>
@@ -2741,19 +2744,16 @@ you have</string>
         <image name="soy-sauce" width="512" height="512"/>
         <image name="tea-cup" width="512" height="512"/>
         <image name="turkey" width="512" height="512"/>
-        <image name="user" width="24" height="24"/>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2sU-K6-yn5"/>
         <segue reference="xXc-Jr-22d"/>
-        <segue reference="Ght-td-y0R"/>
         <segue reference="R2o-QW-hYP"/>
         <segue reference="KXL-dA-xwH"/>
         <segue reference="M4O-Ck-MZ4"/>
         <segue reference="hYn-xr-5Yy"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="4fT-N8-gD0"/>
+        <segue reference="hrC-YD-cxc"/>
         <segue reference="qud-kP-RaV"/>
         <segue reference="AVH-vX-7vM"/>
         <segue reference="vaN-H9-Laj"/>
