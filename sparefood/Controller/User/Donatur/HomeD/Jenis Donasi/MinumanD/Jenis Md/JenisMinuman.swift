@@ -56,17 +56,4 @@ class JenisMinuman: UIViewController {
 
 }
 
-extension UIViewController{
-    @objc func swipeAction(swipe: UISwipeGestureRecognizer){
-        switch swipe.direction.rawValue {
-        case  0:
-            self.dismiss(animated: true, completion: nil)
-            performSegue(withIdentifier: "swipeRight", sender: self)
-        case  1:
-            self.dismiss(animated: true, completion: nil)
-            performSegue(withIdentifier: "swipeLeft", sender: self)
-        default:
-            break
-        }
-    }
-}
+
