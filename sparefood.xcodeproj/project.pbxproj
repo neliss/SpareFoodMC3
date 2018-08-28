@@ -17,6 +17,9 @@
 		11B1FFA2212E91F200C739A5 /* RootPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFA1212E91F200C739A5 /* RootPageView.swift */; };
 		11B1FFA4212E945100C739A5 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFA3212E945100C739A5 /* Page2ViewController.swift */; };
 		11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFA5212E948800C739A5 /* Page3ViewController.swift */; };
+		11B1FFE42133C09100C739A5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */; };
+		11B1FFE62133C4F600C739A5 /* CollectionViewKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */; };
+		11B1FFE821342C7900C739A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FFE721342C7900C739A5 /* Main.storyboard */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
 		2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9B16321328A8D00365A21 /* ProfileViewController.swift */; };
@@ -49,6 +52,9 @@
 		11B1FFA1212E91F200C739A5 /* RootPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageView.swift; sourceTree = "<group>"; };
 		11B1FFA3212E945100C739A5 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
 		11B1FFA5212E948800C739A5 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
+		11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewKomunitas.swift; sourceTree = "<group>"; };
+		11B1FFE721342C7900C739A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../Documents/backup m3/Main.storyboard"; sourceTree = "<group>"; };
 		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2FF9B16321328A8D00365A21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		11B1FF732122A3B600C739A5 = {
 			isa = PBXGroup;
 			children = (
+				11B1FFE721342C7900C739A5 /* Main.storyboard */,
 				11B1FF7E2122A3B600C739A5 /* sparefood */,
 				11B1FF7D2122A3B600C739A5 /* Products */,
 				29FE5634B121B950A90573E7 /* Pods */,
@@ -146,6 +153,8 @@
 		9146BB23212AB9820018F8AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */,
+				11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */,
 				11B1FFA7212E9AA800C739A5 /* intro */,
 				9146BB57212AC8530018F8AA /* Choose */,
 				9146BB27212ABE2D0018F8AA /* User */,
@@ -548,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */,
+				11B1FFE821342C7900C739A5 /* Main.storyboard in Resources */,
 				2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */,
 				11B1FF8A2122A3B800C739A5 /* Assets.xcassets in Resources */,
 				11B1FF852122A3B600C739A5 /* Main.storyboard in Resources */,
@@ -611,6 +621,7 @@
 				9146BB5F212B11A10018F8AA /* JenisMinuman.swift in Sources */,
 				11B1FF802122A3B600C739A5 /* AppDelegate.swift in Sources */,
 				9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */,
+				11B1FFE42133C09100C739A5 /* CollectionViewCell.swift in Sources */,
 				9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */,
 				2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */,
 				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
@@ -623,6 +634,7 @@
 				11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */,
 				11B1FFA2212E91F200C739A5 /* RootPageView.swift in Sources */,
 				9146BB5D212B11890018F8AA /* DeskripsiMakanan.swift in Sources */,
+				11B1FFE62133C4F600C739A5 /* CollectionViewKomunitas.swift in Sources */,
 				9146BB50212AC53C0018F8AA /* LoginDonatur.swift in Sources */,
 				9146BB5B212B11640018F8AA /* JenisMakanan.swift in Sources */,
 				9146BB59212AC86A0018F8AA /* ChooseUser.swift in Sources */,
