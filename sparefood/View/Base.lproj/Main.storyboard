@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,6 +27,7 @@
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="nextHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z6j-QK-nEK"/>
                                     <segue destination="pCz-P1-2GD" kind="show" identifier="kePage1" id="AVH-vX-7vM"/>
                                 </connections>
                             </button>
@@ -70,6 +71,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="2xn-m4-SUS" kind="show" identifier="SelectToMenu" id="hYn-xr-5Yy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -242,7 +246,6 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 </state>
                                 <connections>
                                     <action selector="signupHandler:" destination="rnf-9h-vRQ" eventType="touchUpInside" id="7b6-99-OYv"/>
-                                    <segue destination="c7g-Nn-ic8" kind="show" identifier="signupDtoLogin" id="J8g-Du-rWc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFx-Ih-M8O">
@@ -288,9 +291,11 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                     </view>
                     <connections>
                         <outlet property="confirmpasswordField" destination="xD9-Kl-n8f" id="Dbq-hD-HSL"/>
+                        <outlet property="continueButton" destination="FiI-5d-qVU" id="96W-eT-nuP"/>
                         <outlet property="emailField" destination="Pb2-4R-3Jd" id="asu-ZZ-2c7"/>
                         <outlet property="passwordField" destination="TqL-kN-d8T" id="ybk-lk-HWD"/>
                         <outlet property="phonenumberField" destination="3BE-qg-QFS" id="KT0-Eo-USc"/>
+                        <segue destination="c7g-Nn-ic8" kind="show" identifier="signupDtoLogin" id="va3-sx-pqT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="359-Mm-d9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,14 +314,16 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <rect key="frame" x="-9" y="-4" width="388" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Login as Donatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-YG-Oj7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Login as Donatur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbS-YG-Oj7">
                                 <rect key="frame" x="43" y="9" width="290" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfg-Si-6VM">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfg-Si-6VM">
                                 <rect key="frame" x="52" y="406" width="273" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -344,30 +351,29 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2xn-m4-SUS" kind="show" id="frj-MI-Ekw"/>
+                                    <action selector="signinHandler:" destination="c7g-Nn-ic8" eventType="touchUpInside" id="n4t-sJ-eio"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="donation" translatesAutoresizingMaskIntoConstraints="NO" id="bcV-JA-AC6">
                                 <rect key="frame" x="138" y="136" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SpareFood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0G-zz-NFh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SpareFood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0G-zz-NFh">
                                 <rect key="frame" x="98" y="228" width="183" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="N0G-zz-NFh" firstAttribute="top" secondItem="SbS-YG-Oj7" secondAttribute="bottom" constant="196" id="Bmg-2d-LEj"/>
-                            <constraint firstItem="N0G-zz-NFh" firstAttribute="top" secondItem="SbS-YG-Oj7" secondAttribute="bottom" constant="146" id="M8s-NL-hJa"/>
-                            <constraint firstItem="rfg-Si-6VM" firstAttribute="top" secondItem="N0G-zz-NFh" secondAttribute="bottom" constant="128" id="cxP-9h-0OD"/>
-                            <constraint firstItem="N0G-zz-NFh" firstAttribute="leading" secondItem="REo-ny-4OO" secondAttribute="leading" constant="98" id="f4a-xw-dZE"/>
-                            <constraint firstItem="REo-ny-4OO" firstAttribute="trailing" secondItem="N0G-zz-NFh" secondAttribute="trailing" constant="94" id="xxE-ue-oGy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="REo-ny-4OO"/>
                     </view>
+                    <connections>
+                        <outlet property="continueButton" destination="Sse-uT-qsb" id="clF-nq-21I"/>
+                        <outlet property="emailField" destination="rfg-Si-6VM" id="Uwj-vR-XOU"/>
+                        <outlet property="passwordField" destination="xZ6-Ge-Xeo" id="Kfh-z7-wUF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viW-Rx-CrP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,22 +382,15 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
         <!--Profile-->
         <scene sceneID="08n-XV-rfY">
             <objects>
-                <viewController id="MkG-Q1-4v4" sceneMemberID="viewController">
+                <viewController id="MkG-Q1-4v4" customClass="ProfileViewController" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iWk-sA-uey">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="407-Eq-G6r">
-                                <rect key="frame" x="123" y="155" width="130" height="110"/>
+                                <rect key="frame" x="124" y="155" width="130" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Image From Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-Fi-iLg">
-                                <rect key="frame" x="90" y="273" width="199" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xvH-wy-zor">
                                 <rect key="frame" x="53" y="333" width="273" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -406,7 +405,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srd-gh-0NO">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adress" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srd-gh-0NO" userLabel="Address">
                                 <rect key="frame" x="53" y="476" width="273" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -420,6 +419,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <state key="normal" title="Save">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveHandler:" destination="MkG-Q1-4v4" eventType="touchUpInside" id="lAk-gu-mLt"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-08-15 at 15.43.44" translatesAutoresizingMaskIntoConstraints="NO" id="txW-Lv-xAs">
                                 <rect key="frame" x="-11" y="-1" width="390" height="114"/>
@@ -429,12 +431,31 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <rect key="frame" x="299" y="45" width="60" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signoutHandler:" destination="MkG-Q1-4v4" eventType="touchUpInside" id="htl-j7-mP8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0u-9b-0Hw">
+                                <rect key="frame" x="151" y="277" width="76" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Tap to Change">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Cvv-e7-74U"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="user" id="DZ0-es-vbY"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="avatar-1" id="DZ0-es-vbY"/>
+                    <connections>
+                        <outlet property="addressField" destination="Srd-gh-0NO" id="UBQ-oR-d79"/>
+                        <outlet property="continueButton" destination="E2q-Xl-gBW" id="fLR-4R-jOK"/>
+                        <outlet property="emailField" destination="AN9-pA-64o" id="kIy-gu-u6G"/>
+                        <outlet property="profileImageView" destination="407-Eq-G6r" id="OgN-vk-p8W"/>
+                        <outlet property="tapToChangeProfileButton" destination="U0u-9b-0Hw" id="cxN-ZQ-AGc"/>
+                        <outlet property="usernameField" destination="xvH-wy-zor" id="FVV-rR-nHt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0b-me-Qge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -913,10 +934,10 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
             </objects>
             <point key="canvasLocation" x="2288.8000000000002" y="1090.6403940886701"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--MainTabBarController-->
         <scene sceneID="gNT-AE-oCe">
             <objects>
-                <tabBarController id="2xn-m4-SUS" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" title="MainTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2xn-m4-SUS" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3OG-55-IVs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2724,16 +2745,17 @@ you have</string>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="2sU-K6-yn5"/>
         <segue reference="xXc-Jr-22d"/>
         <segue reference="Ght-td-y0R"/>
         <segue reference="R2o-QW-hYP"/>
-        <segue reference="YhK-La-g0z"/>
-        <segue reference="dZf-bk-Np0"/>
-        <segue reference="frj-MI-Ekw"/>
-        <segue reference="k9L-J7-v0q"/>
-        <segue reference="7fr-57-tjZ"/>
-        <segue reference="J8g-Du-rWc"/>
-        <segue reference="JAQ-ad-iRb"/>
-        <segue reference="2Qg-cT-ig5"/>
+        <segue reference="KXL-dA-xwH"/>
+        <segue reference="M4O-Ck-MZ4"/>
+        <segue reference="hYn-xr-5Yy"/>
+        <segue reference="vNI-Ee-LR9"/>
+        <segue reference="4fT-N8-gD0"/>
+        <segue reference="qud-kP-RaV"/>
+        <segue reference="AVH-vX-7vM"/>
+        <segue reference="vaN-H9-Laj"/>
     </inferredMetricsTieBreakers>
 </document>

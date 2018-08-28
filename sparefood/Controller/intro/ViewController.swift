@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController , UIScrollViewDelegate{
 
@@ -21,7 +22,27 @@ class ViewController: UIViewController , UIScrollViewDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func nextHandler(_ sender: Any) {
+//        if let user = Auth.auth().currentUser {
+//            performSegue(withIdentifier: "SelectToMenu", sender: sender)
+//        }
+    }
+    
 
+}
 
+extension UIViewController{
+    @objc func swipeAction(swipe: UISwipeGestureRecognizer){
+        switch swipe.direction.rawValue {
+        case  1:
+            self.dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "swipeRight", sender: self)
+        case  2:
+            self.dismiss(animated: true, completion: nil)
+            performSegue(withIdentifier: "swipeLeft", sender: self)
+        default:
+            break
+        }
+    }
 }
 
