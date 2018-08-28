@@ -68,15 +68,7 @@ class RegisDonatur: UIViewController,UINavigationControllerDelegate,UITextFieldD
         handleSignUp()
     }
     
-    //    @objc func keyboardWillAppear(notification: NSNotification){
-    //
-    //        let info = notification.userInfo!
-    //        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-    //
-    //        continueButton.center = CGPoint(x: view.center.x,
-    //                                        y: view.frame.height - keyboardFrame.height - 16.0 - continueButton.frame.height / 2)
-    //        activityView.center = continueButton.center
-    //    }
+    
     
     @objc func textFieldChanged(_ target:UITextField) {
         let phonenumber = phonenumberField.text

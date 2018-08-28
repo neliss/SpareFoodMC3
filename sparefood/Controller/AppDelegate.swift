@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.window?.makeKeyAndVisible()
             } else {
                 // menu screen
-                let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! ViewController
+                let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! ChooseUser
                 self.window?.rootViewController = controller
                 self.window?.makeKeyAndVisible()
             }

@@ -12,34 +12,42 @@ class JenisBahanMakanan: UIViewController {
 
     @IBOutlet weak var lblBtnBeras: UIButton!
     @IBAction func btnBeras(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnTelur: UIButton!
     @IBAction func btnTelur(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnMinyak: UIButton!
     @IBAction func btnMinyak(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnKecap: UIButton!
     @IBAction func btnKecap(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnSauce: UIButton!
     @IBAction func btnSauce(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnTepung: UIButton!
     @IBAction func btnTepung(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnBumbuDapur: UIButton!
     @IBAction func btnBumbuDapur(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     @IBOutlet weak var lblBtnMieInstant: UIButton!
     @IBAction func btnMieInstant(_ sender: UIButton) {
+        performSegue(withIdentifier: "BahanMakananToPost", sender: Any)
     }
     
     
