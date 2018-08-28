@@ -300,7 +300,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="359-Mm-d9Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-44" y="-753"/>
+            <point key="canvasLocation" x="-44" y="-597"/>
         </scene>
         <!--Login Donatur-->
         <scene sceneID="eV8-Wk-VtX">
@@ -2711,6 +2711,6 @@ you have</string>
         <segue reference="4fT-N8-gD0"/>
         <segue reference="qud-kP-RaV"/>
         <segue reference="AVH-vX-7vM"/>
-        <segue reference="vaN-H9-Laj"/>
+        <segue reference="2Qg-cT-ig5"/>
     </inferredMetricsTieBreakers>
 </document>
