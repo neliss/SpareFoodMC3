@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -574,7 +574,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
         <!--Request-->
         <scene sceneID="ZMG-5d-utE">
             <objects>
-                <viewController id="PCJ-NI-oA1" sceneMemberID="viewController">
+                <viewController id="PCJ-NI-oA1" customClass="RequestD" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00U-Rg-G0z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -586,7 +586,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                 <sections>
                                     <tableViewSection id="jHe-Z6-S5c">
                                         <cells>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="257" id="Erd-kW-NOa">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="257" id="Erd-kW-NOa" customClass="CellRequestD" customModule="sparefood" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="257"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Erd-kW-NOa" id="lzO-zV-Owo">
@@ -608,7 +608,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donuts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5d-NX-Hk3">
-                                                            <rect key="frame" x="15" y="73" width="53" height="22"/>
+                                                            <rect key="frame" x="15" y="73" width="345" height="22"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -622,7 +622,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MM/DD/YY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hji-gP-nQJ">
-                                                            <rect key="frame" x="16" y="133" width="84" height="22"/>
+                                                            <rect key="frame" x="16" y="133" width="344" height="22"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -636,7 +636,7 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6q-m4-dnM">
-                                                            <rect key="frame" x="16" y="193" width="66" height="22"/>
+                                                            <rect key="frame" x="16" y="193" width="344" height="22"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                                             <nil key="textColor"/>
@@ -644,6 +644,12 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                                                         </label>
                                                     </subviews>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="lblDonasi" destination="G5d-NX-Hk3" id="z56-0f-EB9"/>
+                                                    <outlet property="lblPesan" destination="j6q-m4-dnM" id="4it-6l-rXt"/>
+                                                    <outlet property="lblStatus" destination="FhX-te-8ER" id="vnI-Ba-cer"/>
+                                                    <outlet property="lblTanggalPengambilan" destination="hji-gP-nQJ" id="yAb-fE-Wjl"/>
+                                                </connections>
                                             </tableViewCell>
                                         </cells>
                                     </tableViewSection>
@@ -665,6 +671,9 @@ Bersama-sama, kita dapat membantu mengakhiri kelaparan dan mencegah limbah makan
                         <viewLayoutGuide key="safeArea" id="Imi-8k-DJn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Request" image="notification" id="950-qO-rHF"/>
+                    <connections>
+                        <outlet property="lblStatus" destination="FhX-te-8ER" id="odR-lp-1dm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEd-PE-U6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1916,10 +1925,10 @@ CA
             </objects>
             <point key="canvasLocation" x="1422" y="1917"/>
         </scene>
-        <!--Profile KomunitasD-->
+        <!--Profile KomuitasD-->
         <scene sceneID="ZgJ-Qd-W2I">
             <objects>
-                <viewController storyboardIdentifier="ProfileKomunitasD" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B1N-kV-GU9" customClass="ProfileKomunitasD" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileKomunitasD" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B1N-kV-GU9" customClass="ProfileKomuitasD" customModule="sparefood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ol1-GK-Jw6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2001,7 +2010,7 @@ CA
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnDonate:" destination="B1N-kV-GU9" eventType="touchUpInside" id="Vlo-pl-lYc"/>
+                                    <action selector="btnDonasi:" destination="B1N-kV-GU9" eventType="touchUpInside" id="YYB-as-IM0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2009,11 +2018,10 @@ CA
                         <viewLayoutGuide key="safeArea" id="AUT-WX-17K"/>
                     </view>
                     <connections>
-                        <outlet property="lblEmailKomunitas" destination="Wgi-K6-csv" id="OeX-3M-fq0"/>
+                        <outlet property="lblAlamat" destination="5Oe-RM-bdU" id="XZs-0e-HSH"/>
+                        <outlet property="lblEmail" destination="Wgi-K6-csv" id="vKs-bf-49f"/>
                         <outlet property="lblImageView" destination="dah-Iq-kwp" id="1gp-BA-anf"/>
-                        <outlet property="lblNamaKomunitas" destination="Pg1-hC-Lza" id="MYK-7e-eld"/>
-                        <outlet property="lblNomotTelphoneKomunitas" destination="RNy-3z-EnC" id="UcX-Qg-lHq"/>
-                        <outlet property="textViewAlamat" destination="5Oe-RM-bdU" id="GVT-jE-82p"/>
+                        <outlet property="lblNomorTelphone" destination="RNy-3z-EnC" id="BB4-ya-lif"/>
                         <segue destination="Z2L-0L-HEj" kind="show" id="hrC-YD-cxc"/>
                     </connections>
                 </viewController>
@@ -2714,6 +2722,7 @@ you have</string>
         <image name="1185a31e-1e70-45c7-999c-accd98afc567" width="200" height="200"/>
         <image name="Screen Shot 2018-08-15 at 15.43.44" width="654" height="1422"/>
         <image name="apple" width="512" height="512"/>
+        <image name="avatar-1" width="24" height="24"/>
         <image name="chips" width="512" height="512"/>
         <image name="donation" width="512" height="512"/>
         <image name="eff9875b-6da8-465e-a4b4-9673c613c1e9" width="200" height="200"/>
@@ -2741,11 +2750,9 @@ you have</string>
         <image name="soy-sauce" width="512" height="512"/>
         <image name="tea-cup" width="512" height="512"/>
         <image name="turkey" width="512" height="512"/>
-        <image name="user" width="24" height="24"/>
         <image name="water" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2sU-K6-yn5"/>
         <segue reference="xXc-Jr-22d"/>
         <segue reference="Ght-td-y0R"/>
         <segue reference="R2o-QW-hYP"/>
@@ -2753,7 +2760,7 @@ you have</string>
         <segue reference="M4O-Ck-MZ4"/>
         <segue reference="hYn-xr-5Yy"/>
         <segue reference="vNI-Ee-LR9"/>
-        <segue reference="4fT-N8-gD0"/>
+        <segue reference="hrC-YD-cxc"/>
         <segue reference="qud-kP-RaV"/>
         <segue reference="AVH-vX-7vM"/>
         <segue reference="2Qg-cT-ig5"/>

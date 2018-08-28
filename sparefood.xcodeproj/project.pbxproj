@@ -19,10 +19,12 @@
 		11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFA5212E948800C739A5 /* Page3ViewController.swift */; };
 		11B1FFE42133C09100C739A5 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */; };
 		11B1FFE62133C4F600C739A5 /* CollectionViewKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */; };
-		11B1FFE821342C7900C739A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B1FFE721342C7900C739A5 /* Main.storyboard */; };
 		2B29E2470A06C1888E921E35 /* Pods_sparefood.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735205D17A57BBAB5199F740 /* Pods_sparefood.framework */; };
 		2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */; };
 		2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9B16321328A8D00365A21 /* ProfileViewController.swift */; };
+		9141DEA721351AD300E49512 /* ProfileKomuitasD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */; };
+		9141DEAB21351D8800E49512 /* RequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEAA21351D8800E49512 /* RequestD.swift */; };
+		9141DEAD21351E0F00E49512 /* CellRequestD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9141DEAC21351E0F00E49512 /* CellRequestD.swift */; };
 		9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB47212AC45B0018F8AA /* HomeDonatur.swift */; };
 		9146BB4A212AC4B80018F8AA /* HomeKomunitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */; };
 		9146BB4E212AC5130018F8AA /* RegisDonatur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146BB4D212AC5130018F8AA /* RegisDonatur.swift */; };
@@ -54,11 +56,13 @@
 		11B1FFA5212E948800C739A5 /* Page3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page3ViewController.swift; sourceTree = "<group>"; };
 		11B1FFE32133C09100C739A5 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		11B1FFE52133C4F600C739A5 /* CollectionViewKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewKomunitas.swift; sourceTree = "<group>"; };
-		11B1FFE721342C7900C739A5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "../Documents/backup m3/Main.storyboard"; sourceTree = "<group>"; };
 		2F80C351212AA86C00B941A5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2FF9B16321328A8D00365A21 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		709F1E839726FCAC8D6A9553 /* Pods-sparefood.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sparefood.release.xcconfig"; path = "Pods/Target Support Files/Pods-sparefood/Pods-sparefood.release.xcconfig"; sourceTree = "<group>"; };
 		735205D17A57BBAB5199F740 /* Pods_sparefood.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sparefood.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileKomuitasD.swift; sourceTree = "<group>"; };
+		9141DEAA21351D8800E49512 /* RequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestD.swift; sourceTree = "<group>"; };
+		9141DEAC21351E0F00E49512 /* CellRequestD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellRequestD.swift; sourceTree = "<group>"; };
 		9146BB47212AC45B0018F8AA /* HomeDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDonatur.swift; sourceTree = "<group>"; };
 		9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKomunitas.swift; sourceTree = "<group>"; };
 		9146BB4D212AC5130018F8AA /* RegisDonatur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisDonatur.swift; sourceTree = "<group>"; };
@@ -91,7 +95,6 @@
 		11B1FF732122A3B600C739A5 = {
 			isa = PBXGroup;
 			children = (
-				11B1FFE721342C7900C739A5 /* Main.storyboard */,
 				11B1FF7E2122A3B600C739A5 /* sparefood */,
 				11B1FF7D2122A3B600C739A5 /* Products */,
 				29FE5634B121B950A90573E7 /* Pods */,
@@ -150,6 +153,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9141DEA521351AAD00E49512 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9B16321328A8D00365A21 /* ProfileViewController.swift */,
+				9141DEA621351AD300E49512 /* ProfileKomuitasD.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		9141DEA921351D6B00E49512 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9141DEAA21351D8800E49512 /* RequestD.swift */,
+				9141DEAC21351E0F00E49512 /* CellRequestD.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		9146BB23212AB9820018F8AA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				9146BB49212AC4B80018F8AA /* HomeKomunitas.swift */,
-				9146BB3A212AC1AA0018F8AA /* Jenis Donasi */,
 			);
 			path = HomeK;
 			sourceTree = "<group>";
@@ -185,7 +205,6 @@
 			children = (
 				9146BB29212ABE450018F8AA /* Donatur */,
 				9146BB28212ABE3E0018F8AA /* Komunitas */,
-				2FF9B16321328A8D00365A21 /* ProfileViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -193,10 +212,9 @@
 		9146BB28212ABE3E0018F8AA /* Komunitas */ = {
 			isa = PBXGroup;
 			children = (
+				9141DEA521351AAD00E49512 /* profile */,
 				9146BB51212AC5780018F8AA /* RegisK */,
 				9146BB52212AC5800018F8AA /* LoginK */,
-				9146BB2E212ABF460018F8AA /* RequestK */,
-				9146BB2C212ABEB00018F8AA /* ProfileK */,
 				9146BB25212ABDF80018F8AA /* HomeK */,
 			);
 			path = Komunitas;
@@ -207,8 +225,6 @@
 			children = (
 				9146BB4C212AC4E30018F8AA /* RegisD */,
 				9146BB4B212AC4CE0018F8AA /* LoginD */,
-				9146BB2D212ABF340018F8AA /* RequestD */,
-				9146BB2B212ABE9B0018F8AA /* ProfileD */,
 				9146BB2A212ABE930018F8AA /* HomeD */,
 			);
 			path = Donatur;
@@ -217,38 +233,11 @@
 		9146BB2A212ABE930018F8AA /* HomeD */ = {
 			isa = PBXGroup;
 			children = (
+				9141DEA921351D6B00E49512 /* Request */,
 				9146BB47212AC45B0018F8AA /* HomeDonatur.swift */,
 				9146BB2F212ABF920018F8AA /* Jenis Donasi */,
 			);
 			path = HomeD;
-			sourceTree = "<group>";
-		};
-		9146BB2B212ABE9B0018F8AA /* ProfileD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProfileD;
-			sourceTree = "<group>";
-		};
-		9146BB2C212ABEB00018F8AA /* ProfileK */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProfileK;
-			sourceTree = "<group>";
-		};
-		9146BB2D212ABF340018F8AA /* RequestD */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RequestD;
-			sourceTree = "<group>";
-		};
-		9146BB2E212ABF460018F8AA /* RequestK */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RequestK;
 			sourceTree = "<group>";
 		};
 		9146BB2F212ABF920018F8AA /* Jenis Donasi */ = {
@@ -265,8 +254,8 @@
 		9146BB30212ABFA90018F8AA /* MakananD */ = {
 			isa = PBXGroup;
 			children = (
-				9146BB39212AC0D90018F8AA /* Jenis Makd */,
-				9146BB36212AC07B0018F8AA /* DeskripMakd */,
+				9146BB5A212B11640018F8AA /* JenisMakanan.swift */,
+				9146BB5C212B11890018F8AA /* DeskripsiMakanan.swift */,
 			);
 			path = MakananD;
 			sourceTree = "<group>";
@@ -274,8 +263,8 @@
 		9146BB31212ABFB30018F8AA /* MinumanD */ = {
 			isa = PBXGroup;
 			children = (
-				9146BB38212AC0C90018F8AA /* Jenis Md */,
-				9146BB35212AC0660018F8AA /* DeskripMd */,
+				9146BB5E212B11A10018F8AA /* JenisMinuman.swift */,
+				9146BB62212B11D30018F8AA /* DeskripsiMinuman.swift */,
 			);
 			path = MinumanD;
 			sourceTree = "<group>";
@@ -283,8 +272,8 @@
 		9146BB32212ABFC30018F8AA /* Bahan makanD */ = {
 			isa = PBXGroup;
 			children = (
-				9146BB37212AC0BD0018F8AA /* Jenis BMd */,
-				9146BB34212AC04B0018F8AA /* DeskripBMd */,
+				9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */,
+				9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */,
 			);
 			path = "Bahan makanD";
 			sourceTree = "<group>";
@@ -295,157 +284,6 @@
 				9146BB68212C110E0018F8AA /* DonasiUang.swift */,
 			);
 			path = UangD;
-			sourceTree = "<group>";
-		};
-		9146BB34212AC04B0018F8AA /* DeskripBMd */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB66212B11FD0018F8AA /* DeskripsiBahanMakanan.swift */,
-			);
-			path = DeskripBMd;
-			sourceTree = "<group>";
-		};
-		9146BB35212AC0660018F8AA /* DeskripMd */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB62212B11D30018F8AA /* DeskripsiMinuman.swift */,
-			);
-			path = DeskripMd;
-			sourceTree = "<group>";
-		};
-		9146BB36212AC07B0018F8AA /* DeskripMakd */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB5C212B11890018F8AA /* DeskripsiMakanan.swift */,
-			);
-			path = DeskripMakd;
-			sourceTree = "<group>";
-		};
-		9146BB37212AC0BD0018F8AA /* Jenis BMd */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB64212B11E70018F8AA /* JenisBahanMakanan.swift */,
-			);
-			path = "Jenis BMd";
-			sourceTree = "<group>";
-		};
-		9146BB38212AC0C90018F8AA /* Jenis Md */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB5E212B11A10018F8AA /* JenisMinuman.swift */,
-			);
-			path = "Jenis Md";
-			sourceTree = "<group>";
-		};
-		9146BB39212AC0D90018F8AA /* Jenis Makd */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB5A212B11640018F8AA /* JenisMakanan.swift */,
-			);
-			path = "Jenis Makd";
-			sourceTree = "<group>";
-		};
-		9146BB3A212AC1AA0018F8AA /* Jenis Donasi */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB3C212AC1C50018F8AA /* MakananK */,
-				9146BB3D212AC1C70018F8AA /* MinumanK */,
-				9146BB3E212AC1CA0018F8AA /* Bahan makananK */,
-				9146BB3B212AC1BB0018F8AA /* UangK */,
-			);
-			path = "Jenis Donasi";
-			sourceTree = "<group>";
-		};
-		9146BB3B212AC1BB0018F8AA /* UangK */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB45212AC2770018F8AA /* List Donatur U */,
-				9146BB46212AC2860018F8AA /* Deskrip Donasi U */,
-			);
-			path = UangK;
-			sourceTree = "<group>";
-		};
-		9146BB3C212AC1C50018F8AA /* MakananK */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB41212AC2170018F8AA /* List Donatur Mak */,
-				9146BB44212AC2600018F8AA /* Deskrip Donasi Mak */,
-			);
-			path = MakananK;
-			sourceTree = "<group>";
-		};
-		9146BB3D212AC1C70018F8AA /* MinumanK */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB43212AC2330018F8AA /* Deskrip Donasi M */,
-				9146BB40212AC20A0018F8AA /* List Donatur M */,
-			);
-			path = MinumanK;
-			sourceTree = "<group>";
-		};
-		9146BB3E212AC1CA0018F8AA /* Bahan makananK */ = {
-			isa = PBXGroup;
-			children = (
-				9146BB3F212AC1F70018F8AA /* List Donatur BM */,
-				9146BB42212AC2250018F8AA /* Deskrip Donasi BM */,
-			);
-			path = "Bahan makananK";
-			sourceTree = "<group>";
-		};
-		9146BB3F212AC1F70018F8AA /* List Donatur BM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "List Donatur BM";
-			sourceTree = "<group>";
-		};
-		9146BB40212AC20A0018F8AA /* List Donatur M */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "List Donatur M";
-			sourceTree = "<group>";
-		};
-		9146BB41212AC2170018F8AA /* List Donatur Mak */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "List Donatur Mak";
-			sourceTree = "<group>";
-		};
-		9146BB42212AC2250018F8AA /* Deskrip Donasi BM */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Deskrip Donasi BM";
-			sourceTree = "<group>";
-		};
-		9146BB43212AC2330018F8AA /* Deskrip Donasi M */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Deskrip Donasi M";
-			sourceTree = "<group>";
-		};
-		9146BB44212AC2600018F8AA /* Deskrip Donasi Mak */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Deskrip Donasi Mak";
-			sourceTree = "<group>";
-		};
-		9146BB45212AC2770018F8AA /* List Donatur U */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "List Donatur U";
-			sourceTree = "<group>";
-		};
-		9146BB46212AC2860018F8AA /* Deskrip Donasi U */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Deskrip Donasi U";
 			sourceTree = "<group>";
 		};
 		9146BB4B212AC4CE0018F8AA /* LoginD */ = {
@@ -557,7 +395,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B1FF8D2122A3B800C739A5 /* LaunchScreen.storyboard in Resources */,
-				11B1FFE821342C7900C739A5 /* Main.storyboard in Resources */,
 				2F80C352212AA86C00B941A5 /* GoogleService-Info.plist in Resources */,
 				11B1FF8A2122A3B800C739A5 /* Assets.xcassets in Resources */,
 				11B1FF852122A3B600C739A5 /* Main.storyboard in Resources */,
@@ -622,6 +459,8 @@
 				11B1FF802122A3B600C739A5 /* AppDelegate.swift in Sources */,
 				9146BB63212B11D30018F8AA /* DeskripsiMinuman.swift in Sources */,
 				11B1FFE42133C09100C739A5 /* CollectionViewCell.swift in Sources */,
+				9141DEAD21351E0F00E49512 /* CellRequestD.swift in Sources */,
+				9141DEAB21351D8800E49512 /* RequestD.swift in Sources */,
 				9146BB67212B11FD0018F8AA /* DeskripsiBahanMakanan.swift in Sources */,
 				2FF9B16421328A8D00365A21 /* ProfileViewController.swift in Sources */,
 				9146BB56212AC5D70018F8AA /* LoginKomunitas.swift in Sources */,
@@ -630,6 +469,7 @@
 				9146BB65212B11E70018F8AA /* JenisBahanMakanan.swift in Sources */,
 				11B1FFA4212E945100C739A5 /* Page2ViewController.swift in Sources */,
 				9146BB48212AC45B0018F8AA /* HomeDonatur.swift in Sources */,
+				9141DEA721351AD300E49512 /* ProfileKomuitasD.swift in Sources */,
 				9146BB54212AC5BE0018F8AA /* RegisKomunitas.swift in Sources */,
 				11B1FFA6212E948800C739A5 /* Page3ViewController.swift in Sources */,
 				11B1FFA2212E91F200C739A5 /* RootPageView.swift in Sources */,
